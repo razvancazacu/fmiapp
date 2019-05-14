@@ -5,7 +5,7 @@ CREATE TABLE `users` (
                          `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
                          PRIMARY KEY (`username`),
                          UNIQUE KEY `username_UNIQUE` (`username`)
-);
+) ;
 
 INSERT INTO `accounts`.`users`
 (
