@@ -7,6 +7,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Client {
+
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("localhost",8818);
         DataInputStream in = new DataInputStream(socket.getInputStream());
@@ -17,7 +18,7 @@ public class Client {
            Thread reading = new Thread (){
                @Override
                public void run() {
-                   while(true)
+                   while(!(socket.isClosed()))
                    {
                        try {
                            System.out.println(in.readUTF());
@@ -26,26 +27,47 @@ public class Client {
                        }
                    }
 
+
                }
            };
 
             Thread writting = new Thread() {
                 @Override
                 public void run() {
-                   while(true)
+                    while(!(socket.isClosed()))
                    {
                        String msg = scanner.nextLine();
-                       try {
-                           out.writeUTF(socket + ": "+  msg);
-
-                       } catch (IOException e) {
-                           e.printStackTrace();
+                       if (!(msg.equalsIgnoreCase("exit")))
+                       {
+                           try {
+                               out.writeUTF(socket + ": "+  msg);
+                           } catch (IOException e) {
+                               e.printStackTrace();
+                           }
                        }
-                   }
-                }
+                       else {
+                           try {
+                               out.writeUTF(msg);
+                           } catch (IOException e) {
+                               e.printStackTrace();
+                           }
+                           try {
+                               socket.close();
+                           } catch (IOException e) {
+                               e.printStackTrace();
+                           }
+                       }
+
+
+                   }                 }
             };
-            reading.start();
+
             writting.start();
+            reading.start();
+
+
+
+
 
     }
 }
