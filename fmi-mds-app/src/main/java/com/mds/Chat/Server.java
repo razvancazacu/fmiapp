@@ -1,50 +1,63 @@
 package com.mds.Chat;
 
-
-import java.io.IOException;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
-public class Server {
-    public ServerSocket getServerInstance() {
-        return ss;
-    }
+public class Server extends Thread {
 
-    private ServerSocket ss;
-    private boolean running;
-    private ArrayList<Socket> clientList = new ArrayList<Socket>();
+    private final ServerSocket serverSocket;
+    private Socket clientSocket;
+    private ArrayList<Socket> clientList = new ArrayList<>();
 
     public Server(int port) throws IOException {
-        ss=new ServerSocket(port);
-        System.out.println("Server started on port " + port + "!");
-        running = true;
+            serverSocket = new ServerSocket(port);
     }
 
-    public void start()
-    {
-        System.out.println("Waiting for clients ");
-        while(running)
+    @Override
+    public void run() {
+
+       while(true)
+       {
+           try {
+               clientSocket = serverSocket.accept();
+               clientList.add(clientSocket);
+           } catch (IOException e) {
+               e.printStackTrace();
+           }
+           Thread threadForHandlingConnections = new Thread() {
+               @Override
+               public void run() {
+                   try {
+                       handleConnection(clientSocket, clientList);
+                   } catch (IOException e) {
+                       e.printStackTrace();
+                   }
+               }
+           };
+
+           threadForHandlingConnections.start();
+       }
+
+    }
+
+    private void handleConnection(Socket clientSocket, ArrayList<Socket> clientList) throws IOException{
+        System.out.println("New user connected : " + clientSocket + "\n");
+
+        DataInputStream in = new DataInputStream(clientSocket.getInputStream());
+        DataOutputStream out = new DataOutputStream(clientSocket.getOutputStream());
+
+
+        while(true)
         {
-            Socket newClient = null;
-            try {
-                newClient = ss.accept();
-            } catch (IOException e) {
-                e.printStackTrace();
+            String msg = in.readUTF();
+           for(int i = 0;i<clientList.size();i++) {
+                Socket actualClient = clientList.get(i);
+                DataOutputStream clientOut = new DataOutputStream(actualClient.getOutputStream());
+                clientOut.writeUTF(msg);
             }
 
-            clientList.add(newClient);
-            System.out.println("New client! Client nr: "+clientList.size());
         }
     }
-
-
-    public void stop()
-    {
-        running = false;
-        System.out.println("Server Closed!");
-    }
-
 }
-
-
