@@ -14,8 +14,15 @@ public class Client {
         DataOutputStream out = new DataOutputStream(socket.getOutputStream());
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Enter your name please: ");
+        String name = scanner.nextLine();
+        out.writeUTF(name);
 
-           Thread reading = new Thread (){
+        System.out.println("Enter your class please: ");
+        String group = scanner.nextLine();
+        out.writeUTF(group);
+
+        Thread reading = new Thread (){
                @Override
                public void run() {
                    while(!(socket.isClosed()))
@@ -31,32 +38,22 @@ public class Client {
                }
            };
 
-            Thread writting = new Thread() {
+
+        Thread writting = new Thread() {
                 @Override
                 public void run() {
                     while(!(socket.isClosed()))
                    {
                        String msg = scanner.nextLine();
-                       if (!(msg.equalsIgnoreCase("exit")))
-                       {
-                           try {
-                               out.writeUTF(socket + ": "+  msg);
-                           } catch (IOException e) {
-                               e.printStackTrace();
-                           }
-                       }
-                       else {
+
+
                            try {
                                out.writeUTF(msg);
                            } catch (IOException e) {
                                e.printStackTrace();
                            }
-                           try {
-                               socket.close();
-                           } catch (IOException e) {
-                               e.printStackTrace();
-                           }
-                       }
+
+
 
 
                    }                 }

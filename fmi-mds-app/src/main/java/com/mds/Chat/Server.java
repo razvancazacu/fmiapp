@@ -10,7 +10,9 @@ public class Server extends Thread {
 
     private final ServerSocket serverSocket;
     private Socket clientSocket;
-    private ArrayList<Socket> clientList = new ArrayList<>();
+    private ArrayList<Socket> socketList = new ArrayList<>();
+    private ArrayList<String> nameList = new ArrayList<>();
+    private ArrayList<String> groupList = new ArrayList<>();
 
     public Server(int port) throws IOException {
             serverSocket = new ServerSocket(port);
@@ -23,7 +25,13 @@ public class Server extends Thread {
        {
            try {
                clientSocket = serverSocket.accept();
-               clientList.add(clientSocket);
+
+               socketList.add(clientSocket);
+               DataInputStream in = new DataInputStream(clientSocket.getInputStream());
+               nameList.add(in.readUTF());
+               groupList.add(in.readUTF());
+
+
            } catch (IOException e) {
                e.printStackTrace();
            }
@@ -31,7 +39,7 @@ public class Server extends Thread {
                @Override
                public void run() {
                    try {
-                       handleConnection(clientSocket, clientList);
+                       handleConnection(clientSocket, socketList, groupList, nameList);
                    } catch (IOException e) {
                        e.printStackTrace();
                    }
@@ -49,7 +57,7 @@ public class Server extends Thread {
                    msg = scanner.nextLine();
                    if (msg.equalsIgnoreCase("exit"))
                    {
-                       for (Socket client : clientList)
+                       for (Socket client : socketList)
                        {
                            try {
                                client.close();
@@ -72,8 +80,8 @@ public class Server extends Thread {
 
     }
 
-    private void handleConnection(Socket clientSocket, ArrayList<Socket> clientList) throws IOException{
-        System.out.println("New user connected : " + clientSocket + "\n");
+    private void handleConnection(Socket clientSocket, ArrayList<Socket> clientList, ArrayList<String> groupList, ArrayList<String> nameList) throws IOException{
+        System.out.println("New user connected : " + clientSocket.getPort() + "\n");
 
         DataInputStream in = new DataInputStream(clientSocket.getInputStream());
         DataOutputStream out = new DataOutputStream(clientSocket.getOutputStream());
@@ -82,40 +90,119 @@ public class Server extends Thread {
         while(true)
         {
             String msg = in.readUTF();
+            int curentIndex;
+            curentIndex = getCurentIndex(clientSocket, clientList);
+
             if (msg.equalsIgnoreCase("exit"))
             {
-                clientList.remove(clientSocket);
-                System.out.println("User Disconnected!");
+                userDisconected(clientSocket, clientList);
                 break;
-
             }
             else {
-                String[] tokens = msg.split("/");
-                if((tokens.length==5) && (tokens[2].matches("pm")))
+                String[] tokens = msg.split("->");
+                switch (tokens[0])
                 {
-                    int index;
-                    int destinationPort = Integer.parseInt(tokens[3]);
-                    for (index = 0; index<clientList.size();index++)
-                    {
-                        if(clientList.get(index).getPort() == destinationPort)
+                    case "all":
+                        if (tokens.length>1)
+                        broadcastMessage(clientList, groupList, nameList, out, curentIndex, tokens);
+                        else out.writeUTF("Incomplete Command");
+                        break;
+
+                        case "w":
+                        if(tokens.length>2)
+                            privateMessage(clientList, nameList, out, curentIndex, tokens);
+                        else out.writeUTF("Incomplete Command");
+                        break;
+
+                        case "g":
+                            if (tokens.length>1)
+                                groupMessage(clientList, groupList, nameList, out, curentIndex, tokens);
+                            else out.writeUTF("Incomplete Command");
                             break;
-                    }
-                    DataOutputStream pmout = new DataOutputStream(clientList.get(index).getOutputStream());
-                    out.writeUTF("Private message from port" + clientSocket.getPort() + ": "+ tokens[4]);
-                    pmout.writeUTF("Private message from port" + clientSocket.getPort() + ": "+ tokens[4]);
+                    default: out.writeUTF("Unknown Command");
                 }
-                else {
 
-                    for(int i = 0;i<clientList.size();i++) {
-                        Socket actualClient = clientList.get(i);
-                        DataOutputStream clientOut = new DataOutputStream(actualClient.getOutputStream());
-                        clientOut.writeUTF(msg);
-                    }
-                }
+
             }
+        }
+        }
+
+    private void groupMessage(ArrayList<Socket> clientList, ArrayList<String> groupList, ArrayList<String> nameList, DataOutputStream out, int curentIndex, String[] tokens) throws IOException {
+        String fullMessage = new String();
+        fullMessage=tokens[1];
+        for (int i=2;i<tokens.length;i++)
+            fullMessage+="->"+tokens[i];
+
+        for(int i=0;i<clientList.size();i++)
+        {
+            if (groupList.get(i).equalsIgnoreCase(groupList.get(curentIndex)))
+            {
+                DataOutputStream dout = new DataOutputStream(clientList.get(i).getOutputStream());
+                dout.writeUTF(nameList.get(curentIndex)+" in "+groupList.get(curentIndex) +": "+ fullMessage);
+            }
+        }
 
 
+    }
 
+    private void privateMessage(ArrayList<Socket> clientList, ArrayList<String> nameList, DataOutputStream out, int curentIndex, String[] tokens) throws IOException {
+        String destinationName = tokens[1];
+        int i;
+        for(i=0;i<nameList.size();i++)
+        {
+            if(nameList.get(i).equalsIgnoreCase(destinationName))
+                break;
+        }
+
+        if (i>nameList.size()-1)
+            out.writeUTF("User Not Found!");
+        else
+        {
+            String fullMessage = new String();
+            fullMessage=tokens[2];
+            for (int ii=3;ii<tokens.length;ii++)
+                fullMessage+="->"+tokens[ii];
+
+            DataOutputStream dout = new DataOutputStream(clientList.get(i).getOutputStream());
+            dout.writeUTF("Private message from "+nameList.get(curentIndex)+": "+fullMessage);
+            out.writeUTF("Private message to "+nameList.get(i)+": "+fullMessage);
         }
     }
+
+    private void broadcastMessage(ArrayList<Socket> clientList, ArrayList<String> groupList, ArrayList<String> nameList, DataOutputStream out, int curentIndex, String[] tokens) throws IOException {
+        String fullMessage = new String();
+        fullMessage=tokens[1];
+        for (int i=2;i<tokens.length;i++)
+            fullMessage+="->"+tokens[i];
+
+        for(int i=0;i<clientList.size();i++)
+        {
+            DataOutputStream dout = new DataOutputStream(clientList.get(i).getOutputStream());
+            dout.writeUTF(nameList.get(curentIndex)+"/"+groupList.get(curentIndex)+": "+ fullMessage);
+        }
+
+    }
+
+
+
+    private void userDisconected(Socket clientSocket, ArrayList<Socket> clientList) {
+        int i;
+        for (i = 0 ;i<clientList.size();i++)
+            if(clientSocket==clientList.get(i))
+                break;
+
+            clientList.remove(i);
+            nameList.remove(i);
+            groupList.remove(i);
+        System.out.println("User Disconnected!");
+    }
+
+    private int getCurentIndex(Socket clientSocket, ArrayList<Socket> clientList) {
+        int curentIndex;
+        for (curentIndex=0; curentIndex<clientList.size(); curentIndex++)
+            if(clientList.get(curentIndex).getPort()==clientSocket.getPort())
+                break;
+        return curentIndex;
+    }
 }
+
