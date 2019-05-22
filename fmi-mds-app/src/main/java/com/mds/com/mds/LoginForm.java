@@ -115,7 +115,7 @@ public class LoginForm extends JFrame {
                     if (resultSet.next()) {
                         // show a new form
                         JFrame frame = new JFrame("LoginForm");
-                        frame.setContentPane(new MenuForm());
+                        frame.setContentPane(new com.mds.MenuForm());
                         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame.pack();
                         frame.setVisible(true);
