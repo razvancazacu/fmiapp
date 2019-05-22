@@ -2,18 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b60675-7779-4086-9f63-7727577e61ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/DataBaseConnection/DatabaseServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/com/mds/DataBaseConnection/DatabaseServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/DataBaseConnection/MyConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/com/mds/DataBaseConnection/MyConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/com/mds/LoginForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/com/mds/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fmiapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fmiapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/UMS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/out/production/untitled4/META-INF/untitled4.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/out/production/untitled4/services/webscrapping/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/out/production/untitled4/services/webscrapping/grades.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/out/production/untitled4/services/webscrapping/umsConnectionDummy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/src/services/webscrapping/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/src/services/webscrapping/grades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/src/services/webscrapping/umsConnectionDummy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/ums.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../IdeaProjects/UMS/UMS/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +54,11 @@
       <list>
         <option value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/DataBaseConnection/MyConnection.java" />
         <option value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/com/mds/LoginForm.java" />
+        <option value="$PROJECT_DIR$/../IdeaProjects/UMS/UMS/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/umsConnectionDummy.java" />
+        <option value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/Main.java" />
+        <option value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/grades.java" />
       </list>
     </option>
   </component>
@@ -42,8 +69,29 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fmi-mds-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fmi-mds-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fmi-mds-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="269" />
     <option name="width" value="878" />
     <option name="height" value="735" />
   </component>
@@ -75,12 +123,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558128816763" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/untitled4" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558556746859" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
@@ -103,13 +151,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mds.LoginForm" />
       <module name="fmiapp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webscrapping.Main" />
+      <module name="fmiapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webscrapping.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,8 +191,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in fmiapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fmiapp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in fmiapp" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.LoginForm" />
       </list>
@@ -149,16 +220,23 @@
       <updated>1558126090844</updated>
       <workItem from="1558126092237" duration="2715000" />
       <workItem from="1558524096218" duration="807000" />
+      <workItem from="1558554024232" duration="1778000" />
+      <workItem from="1558556062417" duration="749000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_fmiapp - 2019.05.22 at 23h 18m 10s.xml">
+      <configuration name="All in fmiapp" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3522000" />
+    <option name="totallyTimeSpent" value="6049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -168,7 +246,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -184,7 +262,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
@@ -221,6 +299,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/umsConnectionDummy.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/Chat/ServerRunner.java">
@@ -288,9 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fmi-mds-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/com/mds/DataBaseConnection/MyConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -300,13 +387,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/com/mds/LoginForm.form">
       <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/com/mds/LoginForm.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -336,6 +416,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://MAVEN/fmi-mds-app:fmi-mds-app:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>fmi-mds-app:fmi-mds-app:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">fmi-mds-app:fmi-mds-app:1.0-SNAPSHOT</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="52.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fmi-mds-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IdeaProjects/UMS/UMS/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/umsConnectionDummy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/grades.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -417,7 +569,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mysql-connector-java-8.0.16</last-edited>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -428,5 +580,8 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>

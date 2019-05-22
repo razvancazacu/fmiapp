@@ -1,4 +1,4 @@
-package services.webscrapping;
+package webscrapping;
 
 public class grades {
     private String Course;

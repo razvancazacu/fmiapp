@@ -1,4 +1,4 @@
-package services.webscrapping;
+package webscrapping;
 
 import java.io.IOException;
 import java.util.Map;
@@ -34,8 +34,8 @@ public class umsConnectionDummy {
                     .execute();
             Map<String, String> login = response.cookies();
             response = Jsoup.connect(loginURL)
-                    .data("j_username", "1980403440031")
-                    .data("j_password", "03-04-1998")
+                    .data("j_username", this.Username)
+                    .data("j_password", this.Password)
                     .followRedirects(true)
                     .timeout(11000)
                     .cookies(login)

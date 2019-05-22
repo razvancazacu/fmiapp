@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/UMS/UMS.iml" filepath="$PROJECT_DIR$/UMS/UMS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ums.iml" filepath="$PROJECT_DIR$/ums.iml" />
-    </modules>
-  </component>
-</project>
