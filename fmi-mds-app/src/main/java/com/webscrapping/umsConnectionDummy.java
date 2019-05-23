@@ -1,4 +1,4 @@
-package webscrapping;
+package com.webscrapping;
 
 import java.io.IOException;
 import java.util.Map;

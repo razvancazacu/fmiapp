@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fmi-mds-app.iml" filepath="$PROJECT_DIR$/fmi-mds-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/fmiapp.iml" filepath="$PROJECT_DIR$/.idea/fmiapp.iml" />
     </modules>
   </component>
 </project>

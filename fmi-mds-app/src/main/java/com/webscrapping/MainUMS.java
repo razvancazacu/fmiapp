@@ -1,9 +1,9 @@
-package webscrapping;
+package com.webscrapping;
 
 import java.io.IOException;
 
 
-public class Main {
+public class MainUMS {
 
     public static void main(String[] args) throws IOException {
 
