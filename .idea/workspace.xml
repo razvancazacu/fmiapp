@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b60675-7779-4086-9f63-7727577e61ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fmiapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fmiapp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/UMS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/UMS/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/out/production/untitled4/META-INF/untitled4.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/out/production/untitled4/services/webscrapping/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/out/production/untitled4/services/webscrapping/grades.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/out/production/untitled4/services/webscrapping/umsConnectionDummy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/src/services/webscrapping/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/src/services/webscrapping/grades.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/src/services/webscrapping/umsConnectionDummy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/mds/UMS/ums.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmi-mds-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fmi-mds-app/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../IdeaProjects/UMS/UMS/target/" />
@@ -44,7 +14,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="26" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fmi-mds-app/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/umsConnectionDummy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,6 +66,7 @@
         <option value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/umsConnectionDummy.java" />
         <option value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/Main.java" />
         <option value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/grades.java" />
+        <option value="$PROJECT_DIR$/fmi-mds-app/pom.xml" />
       </list>
     </option>
   </component>
@@ -100,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -114,10 +121,62 @@
               <item name="fmiapp" type="462c0819:PsiDirectoryNode" />
               <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fmiapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmiapp" type="462c0819:PsiDirectoryNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmiapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmiapp" type="462c0819:PsiDirectoryNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmiapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmiapp" type="462c0819:PsiDirectoryNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmiapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmiapp" type="462c0819:PsiDirectoryNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmiapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmiapp" type="462c0819:PsiDirectoryNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmiapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmiapp" type="462c0819:PsiDirectoryNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrapping" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrapping" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,6 +281,8 @@
       <workItem from="1558524096218" duration="807000" />
       <workItem from="1558554024232" duration="1778000" />
       <workItem from="1558556062417" duration="749000" />
+      <workItem from="1558595838852" duration="344000" />
+      <workItem from="1558604063114" duration="87000" />
     </task>
     <servers />
   </component>
@@ -231,12 +292,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6049000" />
+    <option name="totallyTimeSpent" value="6480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -308,6 +370,18 @@
           <line>31</line>
           <properties />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/umsConnectionDummy.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/umsConnectionDummy.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -449,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fmi-mds-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../IdeaProjects/UMS/UMS/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -463,31 +530,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/grades.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/umsConnectionDummy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="242">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping/webscrapping/grades.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="276">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fmi-mds-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
         </state>
       </provider>
     </entry>
