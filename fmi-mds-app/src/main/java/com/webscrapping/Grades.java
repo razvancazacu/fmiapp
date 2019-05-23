@@ -1,25 +1,25 @@
 package com.webscrapping;
 
-public class grades {
-    private String Course;
+public class Grades {
+    private String course;
     private String activity;
     private String exam;
-    private String Final;
+    private String finalGrade;
     private String credits;
     private String score;
     private Boolean restanta;
 
-    public void addCourse(String name){
-        this.Course = name;
+    void addCourse(String name){
+        this.course = name;
     }
-    public void addGrade(String a, String b, String c , String d,String e){
+    void addGrade(String a, String b, String c, String d, String e){
         this.activity = a;
         this.exam = b;
-        this.Final  = c;
+        this.finalGrade = c;
         this.credits = d;
         this.score = e;
         float result;
-        if(c.equals("-")==false) {
+        if(!c.equals("-")) {
             result = Float.parseFloat(c);
             if (result < 5)
                 this.restanta = true;
@@ -33,8 +33,8 @@ public class grades {
 
     }
     public void display(){
-        System.out.println(this.Course+" "+this.activity+" "+this.exam+" "+this.Final+" "+this.credits+" "+this.score);
-        if(this.restanta == true)
+        System.out.println(this.course +" "+this.activity+" "+this.exam+" "+this.finalGrade +" "+this.credits+" "+this.score);
+        if(this.restanta)
             System.out.print("RESTANTA");
         else{
             System.out.print("TRECUT");
