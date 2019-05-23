@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fmi-mds-app" />
+        <module name="fmiapp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="fmi-mds-app" target="1.8" />
+      <module name="fmiapp" target="1.8" />
+      <module name="UMS" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
