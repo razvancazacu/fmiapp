@@ -94,6 +94,9 @@ public class UMSConnectionDummy implements UMS{
 
         return "Succes";
     }
+    public ArrayList<Grades> getGrades (){
+        return userGrades;
+    }
     @Override
     public void display(){
         for(Grades grades : this.userGrades){

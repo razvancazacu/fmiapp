@@ -6,6 +6,7 @@ import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 
 public class UMSLogin extends JFrame{
     private JPasswordField password;
@@ -46,17 +47,15 @@ public class UMSLogin extends JFrame{
                 String pass = String.valueOf(password.getPassword());
                 session = new UMSConnectionDummy(user, pass);
                 String code = session.makeConnection();
-                if (code.equals("Succes"))
-                /**
-                 * @Dumi
-                 * Call for the succesful display of the information of grades
-                 */
-                    System.out.print("Succes");
-                    session.display();
+                if (code.equals("Succes")) {
+
+                    ArrayList<Grades> userInformation = session.getGrades();
+                    for(Grades temp : userInformation){
+                        temp.display();
+                    }
+                }
                 else {
-                    /**@Dumi
-                     * Error displaying and noticed user
-                     */
+
                     System.out.print("Failed");
                 }
             }
