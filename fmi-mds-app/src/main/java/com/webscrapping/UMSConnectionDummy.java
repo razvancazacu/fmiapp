@@ -11,7 +11,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class UMSConnectionDummy implements UMS{
-    private final String username ;
+    private String username ;
     private String password;
     private ArrayList<Grades> userGrades = new ArrayList<Grades>();
     UMSConnectionDummy(){
@@ -29,6 +29,12 @@ public class UMSConnectionDummy implements UMS{
     UMSConnectionDummy(String username, String password){
         this.username = username;
         this.password = password;
+    }
+    public void setUsername(String user){
+        this.username = user;
+    }
+    public void setPassword(String pass){
+        this.password = pass;
     }
     public void makeConnection(){
         try {

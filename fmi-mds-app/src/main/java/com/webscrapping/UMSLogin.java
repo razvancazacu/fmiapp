@@ -1,29 +1,24 @@
 package com.webscrapping;
 
 import javax.swing.*;
-import javax.swing.event.AncestorEvent;
-import javax.swing.event.AncestorListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class UMSLogin {
     private JPasswordField password;
     private JTextField username;
     private JButton button1;
     private JTextArea UMSTextArea;
-
+    private UMSConnectionDummy session;
     public UMSLogin() {
-        username.addAncestorListener(new AncestorListener() {
+
+
+        button1.addMouseListener(new MouseAdapter() {
             @Override
-            public void ancestorAdded(AncestorEvent event) {
-
-            }
-
-            @Override
-            public void ancestorRemoved(AncestorEvent event) {
-
-            }
-
-            @Override
-            public void ancestorMoved(AncestorEvent event) {
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
 
             }
         });
