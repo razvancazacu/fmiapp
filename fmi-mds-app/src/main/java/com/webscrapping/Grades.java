@@ -1,6 +1,6 @@
 package com.webscrapping;
 
-public class Grades {
+public class Grades implements UMS{
     private String course;
     private String activity;
     private String exam;

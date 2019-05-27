@@ -10,7 +10,7 @@ import org.jsoup.Connection;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class UMSConnectionDummy {
+public class UMSConnectionDummy implements UMS{
     private final String username ;
     private String password;
     private ArrayList<Grades> userGrades = new ArrayList<Grades>();
