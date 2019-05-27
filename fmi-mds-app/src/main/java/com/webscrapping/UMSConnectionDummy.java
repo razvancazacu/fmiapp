@@ -30,7 +30,7 @@ public class UMSConnectionDummy implements UMS{
         this.username = username;
         this.password = password;
     }
-    void makeConnection(){
+    public void makeConnection(){
         try {
             String URL = "https://ums.unibuc.ro/ums/do/secure/inregistrare_user";
             String loginURL = "https://ums.unibuc.ro/ums/do/secure/j_security_check";
@@ -85,6 +85,7 @@ public class UMSConnectionDummy implements UMS{
         }
 
     }
+    @Override
     public void display(){
         for(Grades grades : this.userGrades){
             grades.display();

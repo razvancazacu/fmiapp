@@ -32,6 +32,13 @@ public class Grades implements UMS{
         }
 
     }
+
+    @Override
+    public void makeConnection() {
+
+    }
+
+    @Override
     public void display(){
         System.out.println(this.course +" "+this.activity+" "+this.exam+" "+this.finalGrade +" "+this.credits+" "+this.score);
         if(this.restanta)
