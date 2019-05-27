@@ -36,7 +36,7 @@ public class UMSConnectionDummy implements UMS{
     public void setPassword(String pass){
         this.password = pass;
     }
-    public void makeConnection(){
+    public String makeConnection(){
         try {
             String URL = "https://ums.unibuc.ro/ums/do/secure/inregistrare_user";
             String loginURL = "https://ums.unibuc.ro/ums/do/secure/j_security_check";
@@ -51,27 +51,29 @@ public class UMSConnectionDummy implements UMS{
                     .timeout(11000)
                     .cookies(login)
                     .method(Connection.Method.POST).execute();
-
-            Document selectedCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
-                    .timeout(8000)
-                    .cookies(login)
-                    .get();
-            Elements courses = selectedCourses.select("td.celula_tabel_left");
-            for (Element x : courses){
-                Grades course = new Grades();
-                String text = x.text();
-                course.addCourse(text);
-                this.userGrades.add(course);
-            }
-            int i =0;
-            ArrayList<String> gradeList = new ArrayList<String>();
-            Elements grades = selectedCourses.select("td.celula_tabel_center_top");
-            grades.remove(0);
-            for (Element x : grades){
-                String text = x.text();
-                if (!text.contains("Sem"))
-                    gradeList.add(text);
-                else{
+            if (response.statusCode() != 200)
+                return "Error";
+            else {
+                Document selectedCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
+                        .timeout(8000)
+                        .cookies(login)
+                        .get();
+                Elements courses = selectedCourses.select("td.celula_tabel_left");
+                for (Element x : courses) {
+                    Grades course = new Grades();
+                    String text = x.text();
+                    course.addCourse(text);
+                    this.userGrades.add(course);
+                }
+                int i = 0;
+                ArrayList<String> gradeList = new ArrayList<String>();
+                Elements grades = selectedCourses.select("td.celula_tabel_center_top");
+                grades.remove(0);
+                for (Element x : grades) {
+                    String text = x.text();
+                    if (!text.contains("Sem"))
+                        gradeList.add(text);
+                    else {
 
                         Grades gradeDetails = this.userGrades.get(i);
                         gradeDetails.addGrade(gradeList.get(0), gradeList.get(1), gradeList.get(2), gradeList.get(3), gradeList.get(4));
@@ -80,16 +82,17 @@ public class UMSConnectionDummy implements UMS{
                         i++;
                     }
 
+                }
+                Grades gradeDetails = this.userGrades.get(i);
+                gradeDetails.addGrade(gradeList.get(0), gradeList.get(1), gradeList.get(2), gradeList.get(3), gradeList.get(4));
+                gradeList.clear();
+                this.userGrades.set(i, gradeDetails);
             }
-            Grades gradeDetails = this.userGrades.get(i);
-            gradeDetails.addGrade(gradeList.get(0), gradeList.get(1), gradeList.get(2), gradeList.get(3), gradeList.get(4));
-            gradeList.clear();
-            this.userGrades.set(i, gradeDetails);
-        }
-        catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
+        return "Succes";
     }
     @Override
     public void display(){

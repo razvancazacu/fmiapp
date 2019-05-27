@@ -34,8 +34,19 @@ public class Grades implements UMS{
     }
 
     @Override
-    public void makeConnection() {
+    public void setUsername(String user) {
+        System.out.println("wrong camp");
+    }
 
+    @Override
+    public void setPassword(String pass) {
+        System.out.println("wrong camp");
+
+    }
+
+    @Override
+    public String makeConnection() {
+        return "Error";
     }
 
     @Override
