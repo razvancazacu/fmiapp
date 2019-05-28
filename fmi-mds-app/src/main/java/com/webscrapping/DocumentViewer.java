@@ -1,15 +1,17 @@
 package com.webscrapping;
 
-import com.mysql.cj.x.protobuf.MysqlxExpr;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.Connection;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
-import java.io.IOException;
+
+import java.io.*;
 import java.util.*;
-import java.util.stream.Stream;
+import java.io.IOException;
+import java.net.ConnectException;
+import java.net.URL;
+import java.net.URLConnection;
+
 
 public class DocumentViewer {
     private String pageURL;
@@ -29,10 +31,10 @@ public class DocumentViewer {
             if(temp.length() >9 || temp.contains("liber")!=false)
                 finalFiles.add(temp);
         }
+        downloadFile(finalFiles.get(0));
         return finalFiles;
     }
-        public static ArrayList<String> search(String searchStr, ArrayList<String> aList)
-        {
+        public static ArrayList<String> search(String searchStr, ArrayList<String> aList) throws IOException {
             ArrayList <String> foundList = new ArrayList<String>();
             boolean found = false;
             Iterator<String> iter = aList.iterator();
@@ -51,8 +53,25 @@ public class DocumentViewer {
             if (foundList.size() != 0) {
                 return foundList;
             }
+
             return foundList;
 
+        }
+        public static void downloadFile(String filelink) throws IOException {
+            System.out.println("opening connection");
+            URL url = new URL("http://fmi.unibuc.ro/ro/"+filelink);
+            InputStream in = url.openStream();
+            FileOutputStream fos = new FileOutputStream(new File("temporary.pdf"));
+
+            System.out.println("reading from resource and writing to file...");
+            int length = -1;
+            byte[] buffer = new byte[1024];// buffer for portion of data from connection
+            while ((length = in.read(buffer)) > -1) {
+                fos.write(buffer, 0, length);
+            }
+            fos.close();
+            in.close();
+            System.out.println("File downloaded");
         }
 };
 
