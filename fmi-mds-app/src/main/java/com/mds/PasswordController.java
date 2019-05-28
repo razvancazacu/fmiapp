@@ -1,10 +1,14 @@
 package com.mds;
 
+import com.mds.DataBaseConnection.MyConnection;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
+import java.awt.event.*;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class PasswordController {
     private JPanel MainPanel;
@@ -15,7 +19,7 @@ public class PasswordController {
     private JButton CANCELButton;
     private JPasswordField passwordConfirmField;
 
-    public PasswordController() {
+    public PasswordController(JFrame passFrame, CurrentUser currentUser) {
         passwordTextField.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
@@ -39,7 +43,7 @@ public class PasswordController {
                         || passwordTextField.getText().trim().toLowerCase().equals("")
                 ) {
                     passwordTextField.setText("password");
-                    passwordTextField.setForeground(new Color(153,153,153));
+                    passwordTextField.setForeground(new Color(153, 153, 153));
                 }
                 //removing the border
                 passwordTextField.setBorder(null);
@@ -72,11 +76,72 @@ public class PasswordController {
                         || pass.toLowerCase().equals("")
                 ) {
                     passwordConfirmField.setText("password");
-                    passwordConfirmField.setForeground(new Color(153,153,153));
+                    passwordConfirmField.setForeground(new Color(153, 153, 153));
                 }
                 //removing the border
                 passwordConfirmField.setBorder(null);
             }
         });
+        CANCELButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                passFrame.dispose();
+            }
+        });
+        ConfirmButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+            }
+        });
+        ConfirmButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                changePassword(passFrame, currentUser);
+            }
+        });
+        passwordConfirmField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    changePassword(passFrame, currentUser);
+                }
+            }
+        });
+    }
+
+    private void changePassword(JFrame framePass, CurrentUser currentUser) {
+        PreparedStatement preparedStatement;
+
+        // get the password and confirm password
+        String password = passwordTextField.getText();
+        String passwordConfirm = String.valueOf(passwordConfirmField.getPassword());
+
+        // creating a select query to see if the username already exists in the db
+        if (password.equals(passwordConfirm)) {
+            String query = "UPDATE `accounts`.`users`\n" +
+                    "SET\n" +
+                    "`password` = ?\n" +
+                    "WHERE `username` = ?;\n";
+
+            try {
+                preparedStatement = MyConnection.getConnection().prepareStatement(query);
+                preparedStatement.setString(1, password);
+                preparedStatement.setString(2, currentUser.getUsername());
+
+                preparedStatement.executeQuery();
+
+            } catch (
+                    SQLException ex) {
+                ex.printStackTrace();
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Passwords do not match", "Change Error", 2);
+        }
+        JOptionPane.showMessageDialog(null, "Change succeeded", "Success", 2);
+        framePass.dispose();
     }
 }

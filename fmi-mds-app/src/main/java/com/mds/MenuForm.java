@@ -7,7 +7,8 @@ import java.sql.SQLException;
 public class MenuForm extends JFrame{
     private JPanel topPanel;
 
-    public MenuForm(JFrame frame)  throws SQLException, ClassNotFoundException {
+
+    public MenuForm(JFrame frame, CurrentUser currentUser)  throws SQLException, ClassNotFoundException {
 
     }
 

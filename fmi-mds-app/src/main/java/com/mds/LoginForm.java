@@ -94,7 +94,7 @@ public class LoginForm extends JFrame {
                 login(frame);
             }
         });
-        LOGINButton.addKeyListener(new KeyAdapter() {
+        passwordField.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
@@ -126,9 +126,10 @@ public class LoginForm extends JFrame {
             if (resultSet.next()) {
                 frameLogin.dispose();
                 String acc_type = resultSet.getString("acc_type");
+                CurrentUser currentUser = new CurrentUser(acc_type, username);
                 JFrame frameMenu = new JFrame("Menu");
                 try {
-                    frameMenu.setContentPane(new MenuForm(frameMenu).getTopPanel());
+                    frameMenu.setContentPane(new MenuForm(frameMenu,currentUser).getTopPanel());
                 } catch (ClassNotFoundException ex) {
                     ex.printStackTrace();
                 }
