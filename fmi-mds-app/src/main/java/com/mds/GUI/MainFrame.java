@@ -71,7 +71,12 @@ public class MainFrame extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 if (currentUser.getAcc_type().equals("admin")) {
-
+                    JFrame frameChange = new JFrame("Add User");
+                    frameChange.setContentPane(new AddAccountForm(frameChange, currentUser).getTopPanel());
+                    frameChange.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frameChange.pack();
+                    frameChange.setVisible(true);
+                    frameChange.setLocationRelativeTo(null);
                 }
             }
         });
