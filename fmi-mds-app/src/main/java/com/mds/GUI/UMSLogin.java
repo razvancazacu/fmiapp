@@ -83,7 +83,6 @@ public class UMSLogin extends JFrame{
                     sem2Table.setModel(defaultTableSem2);
                 }
                 else {
-
                     System.out.print("Failed");
                 }
 

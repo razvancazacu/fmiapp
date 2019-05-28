@@ -49,12 +49,12 @@ public class MainFrame extends JFrame {
                 @Override
                 public void actionPerformed(ActionEvent e) {
 
-                    JFrame frame = new JFrame("UMSLogin");
-                    frame.setContentPane(new UMSLogin(frame).getLoginPanel());
-                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    frame.pack();
-                    frame.setVisible(true);
-                    frame.setLocationRelativeTo(null);
+//                    JFrame frame = new JFrame("UMSLogin");
+//                    frame.setContentPane(new UMSLogin(frame).getLoginPanel());
+//                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//                    frame.pack();
+//                    frame.setVisible(true);
+//                    frame.setLocationRelativeTo(null);
 
 
                     DefaultTableModel defaultTableModel = new DefaultTableModel();
