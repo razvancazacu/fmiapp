@@ -74,7 +74,6 @@ public class UMSConnectionDummy implements UMS {
                         this.yearsId.add(Integer.parseInt(yearSelector.get(i).attr("value")));
                     }
 
-                    System.out.println(this.yearsId.get(option).toString());
 
                     Document yearlyCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
                             .timeout(8000)

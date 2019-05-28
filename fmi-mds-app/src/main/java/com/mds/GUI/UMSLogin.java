@@ -68,7 +68,7 @@ public class UMSLogin extends JFrame{
                     ArrayList<Grades> userInformation = session.getGrades();
                     int i = 0;
                     for(Grades temp : userInformation){
-                        if(i<=6)
+                        if(i<6)
                             defaultTableSem1.addRow(new String[]{userInformation.get(i).getCourse(),
                                                                 userInformation.get(i).getFinalGrade(),
                                                                 userInformation.get(i).getCredits()});
