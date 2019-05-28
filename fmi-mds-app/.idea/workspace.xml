@@ -4,13 +4,6 @@
     <list default="true" id="555b3a91-4922-4ca7-b9a2-84d3f3993a9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/Chat/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/Chat/Client$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/Chat/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/Chat/Client$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/Chat/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/Chat/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/Chat/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/Chat/Server$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/Chat/Server$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/Chat/Server$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/Chat/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/Chat/Server.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,34 +65,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="56">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#795#1202#0" expanded="true" />
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1235#1925#0" expanded="true" />
-                <element signature="e#1924#1925#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="195" column="32" selection-start-line="195" selection-start-column="32" selection-end-line="195" selection-end-column="32" />
+            <state relative-caret-position="391">
+              <caret line="187" column="28" lean-forward="true" selection-start-line="187" selection-start-column="28" selection-end-line="187" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#775#1081#0" expanded="true" />
-                <element signature="e#1080#1081#0" expanded="true" />
-                <element signature="e#1212#2153#0" expanded="true" />
-                <element signature="e#2152#2153#0" expanded="true" />
-                <element signature="method#privateMessage#0;class#Server#0" />
               </folding>
             </state>
           </provider>
@@ -108,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="6987">
               <caret line="457" selection-start-line="457" selection-end-line="457" />
             </state>
           </provider>
@@ -117,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Objects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="5559">
               <caret line="371" selection-start-line="371" selection-end-line="371" />
               <folding>
                 <element signature="e#13945#13946#0" expanded="true" />
@@ -144,6 +128,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -167,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat2/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat2/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java" />
       </list>
     </option>
   </component>
@@ -203,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -256,6 +244,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,7 +355,6 @@
       <item itemvalue="Application.Runner" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.ServerRunner" />
-      <item itemvalue="Application.Client (1)" />
       <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
@@ -374,7 +362,6 @@
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.ServerRunner" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
@@ -392,6 +379,14 @@
       <workItem from="1557832853901" duration="24000" />
       <workItem from="1557833037054" duration="21428000" />
     </task>
+    <task id="LOCAL-00001" summary="Classes modified for GUI">
+      <created>1559062913355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559062913355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -409,7 +404,39 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.20121029" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.204236" />
+      <window_info id="Structure" order="1" sideWeight="0.5023585" side_tool="true" weight="0.19515885" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.30756843" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32850242" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989059" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.31723028" />
+      <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.49953052" weight="0.3312369" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.34460548" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.108359136" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.07639569" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.204236" />
       <window_info id="Structure" order="1" sideWeight="0.5023585" side_tool="true" weight="0.19515885" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -439,10 +466,14 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.07639569" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Classes modified for GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classes modified for GUI" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e1d78dd-fe99-47f4-83f6-6611e6119bd4/console.sql" />
@@ -513,45 +544,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#216#217#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Runner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/test.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/DataInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -566,33 +560,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#795#1202#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1235#1925#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="6987">
           <caret line="457" selection-start-line="457" selection-end-line="457" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Objects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="5559">
           <caret line="371" selection-start-line="371" selection-end-line="371" />
           <folding>
             <element signature="e#13945#13946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/usageExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#282#440#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,15 +599,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="195" column="32" selection-start-line="195" selection-start-column="32" selection-end-line="195" selection-end-column="32" />
+        <state relative-caret-position="391">
+          <caret line="187" column="28" lean-forward="true" selection-start-line="187" selection-start-column="28" selection-end-line="187" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#775#1081#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1212#2153#0" expanded="true" />
-            <element signature="e#2152#2153#0" expanded="true" />
-            <element signature="method#privateMessage#0;class#Server#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

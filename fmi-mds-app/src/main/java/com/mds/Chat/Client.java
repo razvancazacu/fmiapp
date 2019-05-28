@@ -6,65 +6,41 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
+
 public class Client {
+    private static Socket socket;
+    private static DataInputStream in;
+    private static DataOutputStream out;
+    private static Scanner scanner;
 
-    public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("localhost",8818);
-        DataInputStream in = new DataInputStream(socket.getInputStream());
-        DataOutputStream out = new DataOutputStream(socket.getOutputStream());
-        Scanner scanner = new Scanner(System.in);
+    public Client(String username, int group) throws IOException {
+        socket = new Socket("localhost", 8818);
+        in = new DataInputStream(socket.getInputStream());
+        out = new DataOutputStream(socket.getOutputStream());
+        out.writeUTF(username);
+        out.writeUTF("" + group);
+    }
 
-        System.out.println("Enter your name please: ");
-        String name = scanner.nextLine();
-        out.writeUTF(name);
+    public String reading()  {
 
-        System.out.println("Enter your class please: ");
-        String group = scanner.nextLine();
-        out.writeUTF(group);
+        try {
+            return in.readUTF();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "Error reading!\n";
+        }
 
-        Thread reading = new Thread (){
-               @Override
-               public void run() {
-                   while(!(socket.isClosed()))
-                   {
-                       try {
-                           System.out.println(in.readUTF());
-                       } catch (IOException e) {
-                           e.printStackTrace();
-                       }
-                   }
+    }
 
+    public void writting(String msg) {
 
-               }
-           };
-
-
-        Thread writting = new Thread() {
-                @Override
-                public void run() {
-                    while(!(socket.isClosed()))
-                   {
-                       String msg = scanner.nextLine();
-
-
-                           try {
-                               out.writeUTF(msg);
-                           } catch (IOException e) {
-                               e.printStackTrace();
-                           }
-
-
-
-
-                   }                 }
-            };
-
-            writting.start();
-            reading.start();
-
-
-
-
+            try {
+                out.writeUTF(msg);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
     }
 }
+
+
