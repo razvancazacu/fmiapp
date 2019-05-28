@@ -4,10 +4,13 @@ import com.mds.CurrentUser;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class MainFrame extends JFrame {
     private JTabbedPane tabbedPane1;
     private JPanel rootPanel;
+    private JButton changePasswordButton;
 
     public MainFrame(JFrame mainFrame, CurrentUser currentUser)
     {
@@ -19,6 +22,18 @@ public class MainFrame extends JFrame {
         Dimension maxDimension = new Dimension(1800, 800);
         setMinimumSize(minDimension);
         setMaximumSize(maxDimension);
+        changePasswordButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                JFrame frameChange = new JFrame("Change Password");
+                frameChange.setContentPane(new PasswordController(frameChange,currentUser).getMainPanel());
+                frameChange.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frameChange.pack();
+                frameChange.setVisible(true);
+                frameChange.setLocationRelativeTo(null);
+            }
+        });
     }
 
     public JPanel getRootPanel() {

@@ -143,6 +143,10 @@ public class PasswordController {
 
     }
 
+    public JPanel getMainPanel() {
+        return MainPanel;
+    }
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("PasswordController");
         CurrentUser currentUser = new CurrentUser("admin","admin");
