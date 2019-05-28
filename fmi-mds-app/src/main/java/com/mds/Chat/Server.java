@@ -81,7 +81,7 @@ public class Server extends Thread {
     }
 
     private void handleConnection(Socket clientSocket, ArrayList<Socket> clientList, ArrayList<String> groupList, ArrayList<String> nameList) throws IOException{
-        System.out.println("New user connected : " + clientSocket.getPort() + "\n");
+        System.out.println("New user connected : " + nameList.get(nameList.size()-1) + "\n");
 
         DataInputStream in = new DataInputStream(clientSocket.getInputStream());
         DataOutputStream out = new DataOutputStream(clientSocket.getOutputStream());

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="555b3a91-4922-4ca7-b9a2-84d3f3993a9b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mds/Chat/example.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,13 +65,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="56">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/example.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+              <folding>
+                <element signature="e#191#330#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#437#577#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/example.java" />
       </list>
     </option>
   </component>
@@ -254,7 +270,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="248" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558135884599" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559063545366" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -285,7 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.example">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mds.Chat.Client" />
       <module name="fmi-mds-app" />
@@ -338,6 +354,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mds.Chat.example" />
+      <module name="fmi-mds-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mds.Chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mds.Chat.test" />
       <module name="fmi-mds-app" />
@@ -356,11 +385,13 @@
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.ServerRunner" />
       <item itemvalue="Application.test" />
+      <item itemvalue="Application.example" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.example" />
         <item itemvalue="Application.ServerRunner" />
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Runner" />
       </list>
@@ -386,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559062913355</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Classes modified for GUI">
+      <created>1559063144354</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559063144354</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -403,6 +441,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.204236" />
       <window_info id="Structure" order="1" sideWeight="0.5023585" side_tool="true" weight="0.19515885" />
@@ -613,6 +652,19 @@
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding>
+            <element signature="e#191#330#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#437#577#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
           </folding>
         </state>
       </provider>
