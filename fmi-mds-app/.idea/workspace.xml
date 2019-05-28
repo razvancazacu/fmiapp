@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b60675-7779-4086-9f63-7727577e61ed" name="Default Changelist" comment="">
+    <list default="true" id="e626658b-6304-41c5-a5ca-17558d7e0370" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/GUI/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/GUI/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/GUI/UMSLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/GUI/UMSLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapping/DocumentViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/webscrapping/DocumentViewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapping/Grades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/webscrapping/Grades.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapping/MainUMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/webscrapping/MainUMS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapping/UMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/webscrapping/UMS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapping/UMSConnectionDummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/webscrapping/UMSConnectionDummy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/GUI/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/GUI/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/Chat/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/Chat/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/LoginForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/MainFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/MainFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/MainFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/MainFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/MainFrame$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/UMSLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/DocumentViewer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/MainUMS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/UMS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSConnectionDummy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/grades.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mds/GUI/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mds/GUI/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSConnectionDummy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSConnectionDummy.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/kkk/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,25 +28,38 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/webscrapping/DocumentViewer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/webscrapping/MainUMS.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/LoginForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="-855">
+              <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="104" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="31" />
+              <folding>
+                <element signature="e#902#1568#0" expanded="true" />
+                <element signature="e#1567#1568#0" expanded="true" />
+                <element signature="e#4097#4420#0" expanded="true" />
+                <element signature="e#4419#4420#0" expanded="true" />
+                <element signature="e#4555#4556#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,79 +67,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/Test.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/javax/swing/JFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11704">
-              <caret line="677" column="16" selection-start-line="677" selection-start-column="16" selection-end-line="677" selection-end-column="16" />
-              <folding>
-                <element signature="e#24232#24233#0" expanded="true" />
-                <element signature="e#24289#24290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/CurrentUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/PasswordController.form">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/PasswordController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5642#5643#0" expanded="true" />
-                <element signature="e#5674#5675#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -140,28 +100,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="master" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mds/GUI/UMSLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mds/GUI/LoginForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mds/GUI/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.form" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webscrapping/UMSConnectionDummy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mds/webscrapping/UMSConnectionDummy.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-353" />
-    <option name="y" value="246" />
-    <option name="width" value="1927" />
-    <option name="height" value="1087" />
+    <option name="x" value="-7" />
+    <option name="width" value="1295" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -179,16 +133,6 @@
             <path>
               <item name="fmi-mds-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fmi-mds-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fmi-mds-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,6 +154,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmi-mds-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="mds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,6 +171,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mds" type="462c0819:PsiDirectoryNode" />
+              <item name="Chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmi-mds-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mds" type="462c0819:PsiDirectoryNode" />
+              <item name="DataBaseConnection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmi-mds-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="mds" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -227,32 +201,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="mds" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
-              <item name="MainFrame" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="fmi-mds-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fmi-mds-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mds" type="462c0819:PsiDirectoryNode" />
-              <item name="webscrapping" type="462c0819:PsiDirectoryNode" />
+              <item name="LoginForm" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559083894329" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -266,22 +230,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="MainUMS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mds.webscrapping.MainUMS" />
-      <module name="fmiapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mds.webscrapping.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mds.GUI.Test" />
+  <component name="RunManager" selected="Application.LoginForm">
+    <configuration name="LoginForm" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mds.GUI.LoginForm" />
       <module name="fmiapp" />
       <extension name="coverage">
         <pattern>
@@ -293,12 +244,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mds.Chat.ServerRunner" />
+      <module name="fmiapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mds.Chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="example" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mds.Chat.example" />
+      <module name="fmiapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mds.Chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.example" />
+      <item itemvalue="Application.LoginForm" />
+      <item itemvalue="Application.ServerRunner" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MainUMS" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MainUMS" />
+        <item itemvalue="Application.LoginForm" />
+        <item itemvalue="Application.ServerRunner" />
+        <item itemvalue="Application.example" />
       </list>
     </recent_temporary>
   </component>
@@ -307,22 +288,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e4b60675-7779-4086-9f63-7727577e61ed" name="Default Changelist" comment="" />
-      <created>1559082712420</created>
+      <changelist id="e626658b-6304-41c5-a5ca-17558d7e0370" name="Default Changelist" comment="" />
+      <created>1559078855092</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1559082712420</updated>
-      <workItem from="1559082738651" duration="872000" />
+      <updated>1559078855092</updated>
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1242000" />
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27452025" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -330,195 +307,113 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3125649" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3271028" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24962178" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25340393" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/AddAccountForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="156" column="17" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6965#6966#0" expanded="true" />
-            <element signature="e#6742#6743#0" expanded="true" />
-            <element signature="e#6773#6774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/AddAccountForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/UMSLogin.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/LoginForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/webscrapping/Grades.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/webscrapping/UMSConnectionDummy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/UMSLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="55" column="48" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="323">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/javax/swing/JFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11704">
-          <caret line="677" column="16" selection-start-line="677" selection-start-column="16" selection-end-line="677" selection-end-column="16" />
-          <folding>
-            <element signature="e#24232#24233#0" expanded="true" />
-            <element signature="e#24289#24290#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/CurrentUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/example.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/LoginForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/PasswordController.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/PasswordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5642#5643#0" expanded="true" />
-            <element signature="e#5674#5675#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/webscrapping/DocumentViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/webscrapping/MainUMS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="-855">
+          <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="104" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+        <state relative-caret-position="233">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="31" />
+          <folding>
+            <element signature="e#902#1568#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#4097#4420#0" expanded="true" />
+            <element signature="e#4419#4420#0" expanded="true" />
+            <element signature="e#4555#4556#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/Chat/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/GUI/MainFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
 </project>

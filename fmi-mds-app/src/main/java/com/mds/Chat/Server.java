@@ -128,8 +128,8 @@ public class Server extends Thread {
         }
 
     private void groupMessage(ArrayList<Socket> clientList, ArrayList<String> groupList, ArrayList<String> nameList, DataOutputStream out, int curentIndex, String[] tokens) throws IOException {
-        String fullMessage = new String();
-        fullMessage=tokens[1];
+        String fullMessage = "~g~";
+        fullMessage+=tokens[1];
         for (int i=2;i<tokens.length;i++)
             fullMessage+="->"+tokens[i];
 
@@ -158,8 +158,8 @@ public class Server extends Thread {
             out.writeUTF("User Not Found!");
         else
         {
-            String fullMessage = new String();
-            fullMessage=tokens[2];
+            String fullMessage = "~w~";
+            fullMessage+=tokens[2];
             for (int ii=3;ii<tokens.length;ii++)
                 fullMessage+="->"+tokens[ii];
 
@@ -170,8 +170,8 @@ public class Server extends Thread {
     }
 
     private void broadcastMessage(ArrayList<Socket> clientList, ArrayList<String> groupList, ArrayList<String> nameList, DataOutputStream out, int curentIndex, String[] tokens) throws IOException {
-        String fullMessage = new String();
-        fullMessage=tokens[1];
+        String fullMessage = "~all~";
+        fullMessage+=tokens[1];
         for (int i=2;i<tokens.length;i++)
             fullMessage+="->"+tokens[i];
 
