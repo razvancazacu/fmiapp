@@ -49,7 +49,7 @@ public class UMSConnectionDummy implements UMS {
         try {
             String URL = "https://ums.unibuc.ro/ums/do/secure/inregistrare_user";
             String loginURL = "https://ums.unibuc.ro/ums/do/secure/j_security_check";
-            Connection.Response response = Jsoup.connect(URL).timeout(8000)
+            Connection.Response response = Jsoup.connect(URL).timeout(10000)
                     .method(Connection.Method.GET)
                     .execute();
             this.cookiesLogin = response.cookies();
@@ -60,8 +60,10 @@ public class UMSConnectionDummy implements UMS {
                     .timeout(11000)
                     .cookies(this.cookiesLogin)
                     .method(Connection.Method.POST).execute();
-            if (response.statusCode() != 200)
+            if (response.statusCode() != 200) {
+                System.out.println("ERROR");
                 return "Error";
+            }
             else {
                 try {
                     Document selectedCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
