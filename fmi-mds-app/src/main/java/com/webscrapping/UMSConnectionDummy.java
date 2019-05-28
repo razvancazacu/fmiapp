@@ -14,6 +14,7 @@ public class UMSConnectionDummy implements UMS{
     private String username ;
     private String password;
     private ArrayList<Grades> userGrades = new ArrayList<Grades>();
+    private Map<String, String> cookiesLogin;
     UMSConnectionDummy(){
         /**
          * @Razvan
@@ -43,20 +44,20 @@ public class UMSConnectionDummy implements UMS{
             Connection.Response response = Jsoup.connect(URL).timeout(8000)
                     .method(Connection.Method.GET)
                     .execute();
-            Map<String, String> login = response.cookies();
+            this.cookiesLogin = response.cookies();
             response = Jsoup.connect(loginURL)
                     .data("j_username", this.username)
                     .data("j_password", this.password)
                     .followRedirects(true)
                     .timeout(11000)
-                    .cookies(login)
+                    .cookies(this.cookiesLogin)
                     .method(Connection.Method.POST).execute();
             if (response.statusCode() != 200)
                 return "Error";
             else {
                 Document selectedCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
                         .timeout(8000)
-                        .cookies(login)
+                        .cookies(this.cookiesLogin)
                         .get();
                 Elements courses = selectedCourses.select("td.celula_tabel_left");
                 for (Element x : courses) {
