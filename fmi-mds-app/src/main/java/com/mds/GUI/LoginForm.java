@@ -1,5 +1,6 @@
-package com.mds;
+package com.mds.GUI;
 
+import com.mds.CurrentUser;
 import com.mds.DataBaseConnection.MyConnection;
 
 import javax.swing.*;
@@ -14,12 +15,11 @@ import java.sql.SQLException;
 public class LoginForm extends JFrame {
     private JTextField usernameTextField;
     private JButton LOGINButton;
-    private JButton CANCELButton;
     private JPanel topPanel;
     private JLabel loginLabel;
     private JPasswordField passwordField;
 
-    public LoginForm() {
+    public LoginForm(JFrame frame) {
 
         //creating a border for the panel and setting the border for tha top panel
         Border panelTopBorder = BorderFactory.createMatteBorder(0, 2, 2, 2, Color.darkGray);
@@ -62,7 +62,7 @@ public class LoginForm extends JFrame {
                 String pass = String.valueOf(passwordField.getPassword());
                 if (pass.toLowerCase().equals("password")) {
                     passwordField.setText("");
-                    usernameTextField.setForeground(Color.black);
+                    passwordField.setForeground(Color.black);
                 }
 
                 // showing that the textfield it's focused on
@@ -92,49 +92,55 @@ public class LoginForm extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                PreparedStatement preparedStatement;
-                ResultSet resultSet;
-
-                // get the username and password
-                String username = usernameTextField.getText();
-                String password = String.valueOf(passwordField.getPassword());
-
-                // creating a select query to see if the username already exists in the db
-
-                String query = "SELECT * FROM `users` WHERE `username` = ? and `password` = ?";
-
-                try {
-                    preparedStatement = MyConnection.getConnection().prepareStatement(query);
-                    preparedStatement.setString(1, username);
-                    preparedStatement.setString(2, password);
-
-                    resultSet = preparedStatement.executeQuery();
-
-                    if (resultSet.next()) {
-                        // show a new form
-                        JFrame frame = new JFrame("LoginForm");
-                        frame.setContentPane(new com.mds.MenuForm());
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                        frame.pack();
-                        frame.setVisible(true);
-                        frame.setLocationRelativeTo(null);
-                    } else {
-                        // error
-                        JOptionPane.showMessageDialog(null,"Invalid Username / Password","Login Error",2);
-                    }
-                } catch (SQLException ex) {
-                    ex.printStackTrace();
-                }
-
-
+                login(frame);
             }
         });
-        CANCELButton.addMouseListener(new MouseAdapter() {
+        passwordField.addKeyListener(new KeyAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    login(frame);
+                }
             }
         });
+    }
+    private void login(JFrame frameLogin){
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+
+        // get the username and password
+        String username = usernameTextField.getText();
+        String password = String.valueOf(passwordField.getPassword());
+
+        // creating a select query to see if the username already exists in the db
+
+        String query = "SELECT * FROM `users` WHERE `username` = ? and `password` = ?";
+
+        try {
+            preparedStatement = MyConnection.getConnection().prepareStatement(query);
+            preparedStatement.setString(1, username);
+            preparedStatement.setString(2, password);
+
+            resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next()) {
+                frameLogin.dispose();
+                String acc_type = resultSet.getString("acc_type");
+                CurrentUser currentUser = new CurrentUser(acc_type, username);
+                JFrame frameMenu = new JFrame("Menu");
+                frameMenu.setContentPane(new MainFrame(frameMenu,currentUser).getRootPanel());
+                frameMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frameMenu.pack();
+                frameMenu.setVisible(true);
+                frameMenu.setLocationRelativeTo(null);
+            } else {
+                // error
+                JOptionPane.showMessageDialog(null,"Invalid Username / Password","Login Error",2);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
@@ -143,7 +149,7 @@ public class LoginForm extends JFrame {
                 @Override
                 public void run() {
                     JFrame frame = new JFrame("LoginForm");
-                    frame.setContentPane(new LoginForm().topPanel);
+                    frame.setContentPane(new LoginForm(frame).topPanel);
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.pack();
                     frame.setVisible(true);
