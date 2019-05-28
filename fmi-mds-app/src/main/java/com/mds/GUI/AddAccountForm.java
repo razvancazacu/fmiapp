@@ -21,6 +21,7 @@ public class AddAccountForm {
     private JTextField emailField;
     private JButton confirmAddingButton;
     private JComboBox accountTypeCombo;
+    private JButton cancelButton;
 
     public AddAccountForm(JFrame frame, CurrentUser currentUser) {
         usernameField.addFocusListener(new FocusAdapter() {
@@ -155,6 +156,13 @@ public class AddAccountForm {
                         ex.printStackTrace();
                     }
                 }
+            }
+        });
+        cancelButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                frame.dispose();
             }
         });
     }

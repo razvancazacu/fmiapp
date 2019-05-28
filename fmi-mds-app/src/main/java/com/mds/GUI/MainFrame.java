@@ -22,6 +22,10 @@ public class MainFrame extends JFrame {
     private JTextArea groupChat;
     private JButton sendButtonGRC;
     private JTextField inputTextFieldGRC;
+    private JPanel D;
+    private JTabbedPane Documents;
+    private JPanel addAccountPanel;
+    private JButton addAccount;
 
     public MainFrame(JFrame mainFrame, CurrentUser currentUser) throws IOException
     {
@@ -51,11 +55,6 @@ public class MainFrame extends JFrame {
                 }
             }
         };
-
-
-
-
-
         reading.start();
 
         //
@@ -77,6 +76,20 @@ public class MainFrame extends JFrame {
                 frameChange.pack();
                 frameChange.setVisible(true);
                 frameChange.setLocationRelativeTo(null);
+            }
+        });
+        addAccount.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                if (currentUser.getAcc_type().equals("admin")) {
+                    JFrame frameChange = new JFrame("Add User");
+                    frameChange.setContentPane(new AddAccountForm(frameChange, currentUser).getTopPanel());
+                    frameChange.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frameChange.pack();
+                    frameChange.setVisible(true);
+                    frameChange.setLocationRelativeTo(null);
+                }
             }
         });
         comboBox1.addActionListener(new ActionListener() {

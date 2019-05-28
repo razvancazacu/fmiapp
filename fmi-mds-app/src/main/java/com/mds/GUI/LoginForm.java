@@ -129,6 +129,7 @@ public class LoginForm extends JFrame {
                 frameLogin.dispose();
                 String acc_type = resultSet.getString("acc_type");
                 CurrentUser currentUser = new CurrentUser(acc_type, username);
+                currentUser.setGroup(resultSet.getInt("group"));
                 JFrame frameMenu = new JFrame("Menu");
                 try {
                     frameMenu.setContentPane(new MainFrame(frameMenu,currentUser).getRootPanel());
