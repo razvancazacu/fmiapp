@@ -14,7 +14,6 @@ import java.sql.SQLException;
 public class LoginForm extends JFrame {
     private JTextField usernameTextField;
     private JButton LOGINButton;
-    private JButton CANCELButton;
     private JPanel topPanel;
     private JLabel loginLabel;
     private JPasswordField passwordField;
@@ -62,7 +61,7 @@ public class LoginForm extends JFrame {
                 String pass = String.valueOf(passwordField.getPassword());
                 if (pass.toLowerCase().equals("password")) {
                     passwordField.setText("");
-                    usernameTextField.setForeground(Color.black);
+                    passwordField.setForeground(Color.black);
                 }
 
                 // showing that the textfield it's focused on
@@ -127,12 +126,6 @@ public class LoginForm extends JFrame {
                 }
 
 
-            }
-        });
-        CANCELButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
             }
         });
     }
