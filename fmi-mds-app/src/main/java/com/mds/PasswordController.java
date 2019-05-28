@@ -7,7 +7,6 @@ import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class PasswordController {
@@ -37,8 +36,6 @@ public class PasswordController {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                //checking if the username is empty or still 'username'
-                // we'll set the text field to "username"
                 if (passwordTextField.getText().trim().toLowerCase().equals("password")
                         || passwordTextField.getText().trim().toLowerCase().equals("")
                 ) {
@@ -120,12 +117,7 @@ public class PasswordController {
         String password = passwordTextField.getText();
         String passwordConfirm = String.valueOf(passwordConfirmField.getPassword());
 
-        // creating a select query to see if the username already exists in the db
-        if (password.equals(passwordConfirm)) {
-//            String query = "UPDATE `accounts`.`users`\n" +
-//                    "SET\n" +
-//                    "`password` = ?\n" +
-//                    "WHERE `username` = ?;\n";
+        if (password.equals(passwordConfirm) && !password.equals("password")) {
 
             String query = "UPDATE `users`\n" +
                     "SET\n" +
@@ -134,8 +126,8 @@ public class PasswordController {
             try {
                 preparedStatement = MyConnection.getConnection().prepareStatement(query);
                 preparedStatement.setString(1, password);
-                preparedStatement.setString(2, "admin");
-//                preparedStatement.setString(2, currentUser.getUsername());
+//                preparedStatement.setString(2, "admin");
+                preparedStatement.setString(2, currentUser.getUsername());
 
                 preparedStatement.executeUpdate();
                 JOptionPane.showMessageDialog(null, "Change succeeded", "Success", 2);
