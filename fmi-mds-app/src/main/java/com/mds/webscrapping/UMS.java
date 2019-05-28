@@ -1,4 +1,4 @@
-package com.webscrapping;
+package com.mds.webscrapping;
 
 public interface UMS {
      void setUsername(String user);

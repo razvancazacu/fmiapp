@@ -1,15 +1,14 @@
 package com.mds.GUI;
 
 
-import com.webscrapping.Grades;
-import com.webscrapping.UMSConnectionDummy;
+import com.mds.webscrapping.Grades;
+import com.mds.webscrapping.UMSConnectionDummy;
 
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class UMSLogin extends JFrame{

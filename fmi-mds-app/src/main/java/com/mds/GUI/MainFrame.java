@@ -18,12 +18,9 @@ public class MainFrame extends JFrame {
     private JTable sem1Table;
     private JPanel sem2Panel;
     private JTable sem2Table;
-<<<<<<< HEAD
     private JPanel D;
-=======
     private JButton addAccount;
     private JPanel addAccountPanel;
->>>>>>> 850cbff86b9ccb6a482f07b1102c9f2cd1c93d59
 
     public MainFrame(JFrame mainFrame, CurrentUser currentUser) {
         if (!currentUser.getAcc_type().equals("admin")) {
@@ -54,20 +51,12 @@ public class MainFrame extends JFrame {
                 public void actionPerformed(ActionEvent e) {
 
                     JFrame frame = new JFrame("UMSLogin");
-                    frame.setContentPane(new UMSLogin(frame).getLoginPanel());
+                    frame.setContentPane(new UMSLogin(frame, sem1Table,sem2Table, comboBox1.getSelectedItem().toString()).getLoginPanel());
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.pack();
                     frame.setVisible(true);
                     frame.setLocationRelativeTo(null);
 
-
-                    DefaultTableModel defaultTableModel = new DefaultTableModel();
-                    defaultTableModel.addColumn("First Name");
-                    defaultTableModel.addColumn("Last Name");
-
-                    defaultTableModel.addRow(new Object[]{"alakazam", "pikapika"});
-
-                    sem1Table.setModel(defaultTableModel);
                 }
             });
         addAccount.addMouseListener(new MouseAdapter() {

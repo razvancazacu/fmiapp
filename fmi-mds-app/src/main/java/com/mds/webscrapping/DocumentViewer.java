@@ -1,4 +1,4 @@
-package com.webscrapping;
+package com.mds.webscrapping;
 
 
 import org.jsoup.Jsoup;
@@ -8,9 +8,7 @@ import org.jsoup.nodes.Document;
 import java.io.*;
 import java.util.*;
 import java.io.IOException;
-import java.net.ConnectException;
 import java.net.URL;
-import java.net.URLConnection;
 
 
 public class DocumentViewer {

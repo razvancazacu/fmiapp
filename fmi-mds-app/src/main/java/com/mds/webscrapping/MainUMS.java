@@ -1,4 +1,4 @@
-package com.webscrapping;
+package com.mds.webscrapping;
 
 import java.io.IOException;
 
