@@ -70,7 +70,7 @@ public class UMSConnectionDummy implements UMS {
                             .get();
                     Elements yearSelector = (Elements) selectedCourses.select("td").select("select").select("option");
 
-                    for (int i = 0; i < yearSelector.size(); i++){
+                    for (int i = 0; i < yearSelector.size()-2; i++){
                         this.yearsId.add(Integer.parseInt(yearSelector.get(i).attr("value")));
                     }
                     System.out.print(yearsId.toString());
@@ -84,13 +84,14 @@ public class UMSConnectionDummy implements UMS {
                         if(j>=0 && j<=yearsId.size())
                             break;
                     }
-                    System.out.println(this.yearsId.get(0).toString());
+                    System.out.println(this.yearsId.get(j).toString());
+
                     Document yearlyCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
                             .timeout(8000)
                             .cookies(this.cookiesLogin)
-                            .data("id", this.yearsId.get(j).toString())
+                            .data("id",this.yearsId.get(j).toString())
                             .post();
-                    itterateGrades(yearlyCourses);
+                    this.itterateGrades(yearlyCourses);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

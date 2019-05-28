@@ -9,7 +9,7 @@ public class MainUMS {
 
             UMSConnectionDummy x = new UMSConnectionDummy();
             x.makeConnection();
-
+            x.display();
 
     }
 }
