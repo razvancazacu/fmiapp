@@ -59,7 +59,7 @@ public class UMSConnectionDummy implements UMS{
                         .timeout(8000)
                         .cookies(this.cookiesLogin)
                         .get();
-                Elements yearSelector = selectedCourses.select("#option value");
+                Elements yearSelector = (Elements) selectedCourses.select("td").select("select");
                 for(Element y : yearSelector)
                     System.out.println(y);
         }
