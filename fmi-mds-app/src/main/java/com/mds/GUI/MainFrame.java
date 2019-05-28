@@ -3,7 +3,10 @@ package com.mds.GUI;
 import com.mds.CurrentUser;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -11,6 +14,10 @@ public class MainFrame extends JFrame {
     private JTabbedPane tabbedPane1;
     private JPanel rootPanel;
     private JButton changePasswordButton;
+    private JComboBox comboBox1;
+    private JTable sem1Table;
+    private JPanel sem2Panel;
+    private JTable sem2Table;
 
     public MainFrame(JFrame mainFrame, CurrentUser currentUser)
     {
@@ -32,6 +39,28 @@ public class MainFrame extends JFrame {
                 frameChange.pack();
                 frameChange.setVisible(true);
                 frameChange.setLocationRelativeTo(null);
+            }
+        });
+        comboBox1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                JFrame frame = new JFrame("UMSLogin");
+                frame.setContentPane(new UMSLogin(frame).getLoginPanel());
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setVisible(true);
+                frame.setLocationRelativeTo(null);
+                
+
+
+                DefaultTableModel defaultTableModel = new DefaultTableModel();
+                defaultTableModel.addColumn("First Name");
+                defaultTableModel.addColumn("Last Name");
+
+                defaultTableModel.addRow(new Object[]{"alakazam", "pikapika"});
+
+                sem1Table.setModel(defaultTableModel);
             }
         });
     }
