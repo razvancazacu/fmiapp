@@ -8,7 +8,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <tabbedpane id="52d6" binding="tabbedPane1" default-binding="true">
+      <tabbedpane id="52d6" binding="Documents" custom-create="true">
         <constraints>
           <grid row="0" column="1" row-span="4" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="200" height="200"/>
@@ -125,6 +125,14 @@
                 </properties>
               </component>
             </children>
+          </grid>
+          <grid id="ee804" binding="D" layout-manager="CardLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Documents"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
           </grid>
         </children>
       </tabbedpane>

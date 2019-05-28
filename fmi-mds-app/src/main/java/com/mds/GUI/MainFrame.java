@@ -11,13 +11,14 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class MainFrame extends JFrame {
-    private JTabbedPane tabbedPane1;
+    private JTabbedPane Documents;
     private JPanel rootPanel;
     private JButton changePasswordButton;
     private JComboBox comboBox1;
     private JTable sem1Table;
     private JPanel sem2Panel;
     private JTable sem2Table;
+    private JPanel D;
 
     public MainFrame(JFrame mainFrame, CurrentUser currentUser)
     {
@@ -59,4 +60,6 @@ public class MainFrame extends JFrame {
     public JPanel getRootPanel() {
         return rootPanel;
     }
+
+
 }
