@@ -3,6 +3,33 @@ package com.mds;
 public class CurrentUser {
     private String acc_type;
     private String username;
+    private String cnp;
+    private String cnpPass;
+    private Integer group;
+
+    public String getCnp() {
+        return cnp;
+    }
+
+    public void setCnp(String cnp) {
+        this.cnp = cnp;
+    }
+
+    public String getCnpPass() {
+        return cnpPass;
+    }
+
+    public void setCnpPass(String cnpPass) {
+        this.cnpPass = cnpPass;
+    }
+
+    public Integer getGroup() {
+        return group;
+    }
+
+    public void setGroup(Integer group) {
+        this.group = group;
+    }
 
     public CurrentUser(String acc_type, String username) {
         this.acc_type = acc_type;
