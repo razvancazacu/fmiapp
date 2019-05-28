@@ -8,7 +8,7 @@ public class MainUMS {
     public static void main(String[] args) throws IOException {
 
             UMSConnectionDummy x = new UMSConnectionDummy();
-            x.makeConnection();
+            //x.makeConnection("2");
             x.display();
 
     }

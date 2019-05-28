@@ -45,11 +45,11 @@ public class UMSConnectionDummy implements UMS {
         this.password = pass;
     }
 
-    public String makeConnection() {
+    public String makeConnection(Integer option) {
         try {
             String URL = "https://ums.unibuc.ro/ums/do/secure/inregistrare_user";
             String loginURL = "https://ums.unibuc.ro/ums/do/secure/j_security_check";
-            Connection.Response response = Jsoup.connect(URL).timeout(8000)
+            Connection.Response response = Jsoup.connect(URL).timeout(10000)
                     .method(Connection.Method.GET)
                     .execute();
             this.cookiesLogin = response.cookies();
@@ -60,8 +60,10 @@ public class UMSConnectionDummy implements UMS {
                     .timeout(11000)
                     .cookies(this.cookiesLogin)
                     .method(Connection.Method.POST).execute();
-            if (response.statusCode() != 200)
+            if (response.statusCode() != 200) {
+                System.out.println("ERROR");
                 return "Error";
+            }
             else {
                 try {
                     Document selectedCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
@@ -73,22 +75,12 @@ public class UMSConnectionDummy implements UMS {
                     for (int i = 0; i < yearSelector.size()-2; i++) {
                         this.yearsId.add(Integer.parseInt(yearSelector.get(i).attr("value")));
                     }
-                    int j;
-                    while(1==1){
-                        System.out.println("Select year");
-                        for (int i = 1 ; i <= yearsId.size();i++)
-                            System.out.println(i);
-                        Scanner input = new Scanner(System.in);
-                        j = input.nextInt()-1;
-                        if(j>=0 && j<=yearsId.size())
-                            break;
-                    }
-                    System.out.println(this.yearsId.get(j).toString());
+
 
                     Document yearlyCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
                             .timeout(8000)
                             .cookies(this.cookiesLogin)
-                            .data("id",this.yearsId.get(j).toString())
+                            .data("id",this.yearsId.get(option).toString())
                             .post();
                     this.itterateGrades(yearlyCourses);
                 } catch (IOException e) {
@@ -110,10 +102,12 @@ public class UMSConnectionDummy implements UMS {
                 course.addCourse(text);
                 this.userGrades.add(course);
             }
+
             int i = 0;
             ArrayList<String> gradeList = new ArrayList<String>();
             Elements grades = yearGrades.select("td.celula_tabel_center_top");
-            grades.remove(0);
+            if(grades.get(0) != null && grades.get(0).text().equals("Sem. I"))
+                grades.remove(0);
             for (Element x : grades) {
                 String text = x.text();
                 if (!text.contains("Sem"))
