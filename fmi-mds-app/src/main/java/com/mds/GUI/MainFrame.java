@@ -51,7 +51,7 @@ public class MainFrame extends JFrame {
                 frame.pack();
                 frame.setVisible(true);
                 frame.setLocationRelativeTo(null);
-                frame.dispose();
+
             }
         });
     }

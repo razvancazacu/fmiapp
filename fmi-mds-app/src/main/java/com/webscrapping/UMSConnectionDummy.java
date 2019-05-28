@@ -101,10 +101,12 @@ public class UMSConnectionDummy implements UMS {
                 course.addCourse(text);
                 this.userGrades.add(course);
             }
+
             int i = 0;
             ArrayList<String> gradeList = new ArrayList<String>();
             Elements grades = yearGrades.select("td.celula_tabel_center_top");
-            grades.remove(0);
+            if(grades.get(0).text().equals("Sem. I"))
+                grades.remove(0);
             for (Element x : grades) {
                 String text = x.text();
                 if (!text.contains("Sem"))
