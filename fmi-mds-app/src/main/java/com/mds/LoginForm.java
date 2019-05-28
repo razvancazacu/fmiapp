@@ -91,48 +91,58 @@ public class LoginForm extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                PreparedStatement preparedStatement;
-                ResultSet resultSet;
-
-                // get the username and password
-                String username = usernameTextField.getText();
-                String password = String.valueOf(passwordField.getPassword());
-
-                // creating a select query to see if the username already exists in the db
-
-                String query = "SELECT * FROM `users` WHERE `username` = ? and `password` = ?";
-
-                try {
-                    preparedStatement = MyConnection.getConnection().prepareStatement(query);
-                    preparedStatement.setString(1, username);
-                    preparedStatement.setString(2, password);
-
-                    resultSet = preparedStatement.executeQuery();
-
-                    if (resultSet.next()) {
-                        frame.dispose();
-//                        String acc_type = resultSet.getString("account_type");
-                        JFrame frameMenu = new JFrame("Menu");
-                        try {
-                            frameMenu.setContentPane(new MenuForm(frameMenu).getTopPanel());
-                        } catch (ClassNotFoundException ex) {
-                            ex.printStackTrace();
-                        }
-                        frameMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                        frameMenu.pack();
-                        frameMenu.setVisible(true);
-                        frameMenu.setLocationRelativeTo(null);
-                    } else {
-                        // error
-                        JOptionPane.showMessageDialog(null,"Invalid Username / Password","Login Error",2);
-                    }
-                } catch (SQLException ex) {
-                    ex.printStackTrace();
-                }
-
-
+                login(frame);
             }
         });
+        LOGINButton.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    login(frame);
+                }
+            }
+        });
+    }
+    private void login(JFrame frameLogin){
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+
+        // get the username and password
+        String username = usernameTextField.getText();
+        String password = String.valueOf(passwordField.getPassword());
+
+        // creating a select query to see if the username already exists in the db
+
+        String query = "SELECT * FROM `users` WHERE `username` = ? and `password` = ?";
+
+        try {
+            preparedStatement = MyConnection.getConnection().prepareStatement(query);
+            preparedStatement.setString(1, username);
+            preparedStatement.setString(2, password);
+
+            resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next()) {
+                frameLogin.dispose();
+                String acc_type = resultSet.getString("acc_type");
+                JFrame frameMenu = new JFrame("Menu");
+                try {
+                    frameMenu.setContentPane(new MenuForm(frameMenu).getTopPanel());
+                } catch (ClassNotFoundException ex) {
+                    ex.printStackTrace();
+                }
+                frameMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frameMenu.pack();
+                frameMenu.setVisible(true);
+                frameMenu.setLocationRelativeTo(null);
+            } else {
+                // error
+                JOptionPane.showMessageDialog(null,"Invalid Username / Password","Login Error",2);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
