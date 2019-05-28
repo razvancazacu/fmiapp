@@ -26,6 +26,9 @@ public class MainFrame extends JFrame {
     private JTabbedPane Documents;
     private JPanel addAccountPanel;
     private JButton addAccount;
+    private JTextArea PrivateMessage;
+    private JButton sendButtonPM;
+    private JTextField inputTextFieldPM;
 
     public MainFrame(JFrame mainFrame, CurrentUser currentUser) throws IOException
     {
@@ -50,7 +53,7 @@ public class MainFrame extends JFrame {
                         groupChat.setText(groupChat.getText()+tokens[0]+tokens[2]+"\n");
                         break;
                     case "w":
-                        //to do
+                        PrivateMessage.setText(PrivateMessage.getText()+tokens[0]+tokens[2]+"\n");
                         }
                 }
             }
@@ -135,6 +138,23 @@ public class MainFrame extends JFrame {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                     currentClient.writting("g->"+ inputTextFieldGRC.getText());
                     inputTextFieldGRC.setText("");
+                }
+            }
+        });
+        sendButtonPM.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                currentClient.writting("w->"+ inputTextFieldPM.getText());
+                inputTextFieldPM.setText("");
+            }
+        });
+
+        inputTextFieldPM.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    currentClient.writting("w->"+ inputTextFieldPM.getText());
+                    inputTextFieldPM.setText("");
                 }
             }
         });
