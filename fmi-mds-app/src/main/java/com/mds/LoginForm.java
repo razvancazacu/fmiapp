@@ -10,8 +10,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class LoginForm extends JFrame {
     private JTextField usernameTextField;
@@ -115,7 +113,7 @@ public class LoginForm extends JFrame {
                     if (resultSet.next()) {
                         // show a new form
                         JFrame frame = new JFrame("LoginForm");
-                        frame.setContentPane(new MenuForm());
+                        frame.setContentPane(new com.mds.MenuForm());
                         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame.pack();
                         frame.setVisible(true);
