@@ -95,6 +95,9 @@ public class UMSConnectionDummy implements UMS{
 
         return "Succes";
     }
+    public void itterateGrades (Document yearGrades){
+
+    }
     public ArrayList<Grades> getGrades (){
         return userGrades;
     }

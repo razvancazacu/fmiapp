@@ -37,7 +37,14 @@ public class Grades implements UMS{
     public void setUsername(String user) {
         System.out.println("wrong camp");
     }
-
+    public int getCredits(){
+        return Integer.parseInt(this.credits);
+    }
+    public int totalScore(){
+        if (Integer.parseInt(this.finalGrade) >=5)
+            return Integer.parseInt(this.finalGrade) * Integer.parseInt(this.credits);
+        return 0;
+    }
     @Override
     public void setPassword(String pass) {
         System.out.println("wrong camp");
