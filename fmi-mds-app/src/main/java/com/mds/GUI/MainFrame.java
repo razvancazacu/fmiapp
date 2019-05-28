@@ -1,14 +1,12 @@
 package com.mds.GUI;
 
+import com.mds.Chat.Client;
 import com.mds.CurrentUser;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
+import java.io.IOException;
 
 public class MainFrame extends JFrame {
     private JTabbedPane tabbedPane1;
@@ -18,9 +16,49 @@ public class MainFrame extends JFrame {
     private JTable sem1Table;
     private JPanel sem2Panel;
     private JTable sem2Table;
+    private JTextArea globalChat;
+    private JButton sendButtonGLC;
+    private JTextField inputTextFieldGLC;
+    private JTextArea groupChat;
+    private JButton sendButtonGRC;
+    private JTextField inputTextFieldGRC;
 
-    public MainFrame(JFrame mainFrame, CurrentUser currentUser)
+    public MainFrame(JFrame mainFrame, CurrentUser currentUser) throws IOException
     {
+
+        //test
+        final Client currentClient;
+        currentClient = new Client(currentUser.getUsername(),242);
+
+        Thread reading = new Thread(){
+            @Override
+            public void run() {
+                while (true)
+                {
+                    String helper = currentClient.reading();
+
+                    String[] tokens = helper.split("~");
+                    switch (tokens[1]) {
+                    case "all":
+                        globalChat.setText(globalChat.getText()+tokens[0]+tokens[2]+"\n");
+                        break;
+                    case "g":
+                        groupChat.setText(groupChat.getText()+tokens[0]+tokens[2]+"\n");
+                        break;
+                    case "w":
+                        //to do
+                        }
+                }
+            }
+        };
+
+
+
+
+
+        reading.start();
+
+        //
         add(rootPanel);
         setTitle("Fmi APP");
         setSize(750, 500);
@@ -52,6 +90,39 @@ public class MainFrame extends JFrame {
                 frame.setVisible(true);
                 frame.setLocationRelativeTo(null);
 
+            }
+        });
+        sendButtonGLC.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                currentClient.writting("all->"+ inputTextFieldGLC.getText());
+                inputTextFieldGLC.setText("");
+            }
+        });
+        inputTextFieldGLC.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    currentClient.writting("all->"+ inputTextFieldGLC.getText());
+                    inputTextFieldGLC.setText("");
+                }
+            }
+        });
+        sendButtonGRC.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                currentClient.writting("g->"+ inputTextFieldGRC.getText());
+                inputTextFieldGRC.setText("");
+            }
+        });
+
+        inputTextFieldGRC.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    currentClient.writting("g->"+ inputTextFieldGRC.getText());
+                    inputTextFieldGRC.setText("");
+                }
             }
         });
     }

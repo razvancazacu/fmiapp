@@ -7,6 +7,7 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -129,7 +130,11 @@ public class LoginForm extends JFrame {
                 String acc_type = resultSet.getString("acc_type");
                 CurrentUser currentUser = new CurrentUser(acc_type, username);
                 JFrame frameMenu = new JFrame("Menu");
-                frameMenu.setContentPane(new MainFrame(frameMenu,currentUser).getRootPanel());
+                try {
+                    frameMenu.setContentPane(new MainFrame(frameMenu,currentUser).getRootPanel());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 frameMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frameMenu.pack();
                 frameMenu.setVisible(true);
