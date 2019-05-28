@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b60675-7779-4086-9f63-7727577e61ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mds/CurrentUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/MenuForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/MenuForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/PasswordController.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/PasswordController.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mds/PasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mds/PasswordController.java" afterDir="false" />
     </list>
@@ -25,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/LoginForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="-114">
               <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
               <folding>
                 <element signature="e#3592#3766#0" expanded="true" />
@@ -92,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/PasswordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="130" column="64" selection-start-line="130" selection-start-column="64" selection-end-line="130" selection-end-column="64" />
+            <state relative-caret-position="275">
+              <caret line="136" column="54" selection-start-line="136" selection-start-column="54" selection-end-line="136" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3461#3656#0" expanded="true" />
@@ -163,10 +159,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/webscrapping/Grades.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webscrapping/UMSConnectionDummy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/LoginForm.form" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mds/PasswordController.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/CurrentUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/MenuForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/LoginForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mds/PasswordController.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/mds/PasswordController.java" />
       </list>
     </option>
@@ -381,12 +377,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mds.Chat.test" />
+    <configuration name="PasswordController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mds.PasswordController" />
       <module name="fmiapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mds.Chat.*" />
+          <option name="PATTERN" value="com.mds.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -405,10 +401,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LoginForm" />
+        <item itemvalue="Application.PasswordController" />
         <item itemvalue="Application.MainUMS" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in fmiapp" />
-        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +423,7 @@
       <workItem from="1558554024232" duration="1778000" />
       <workItem from="1558556062417" duration="749000" />
       <workItem from="1558604784544" duration="2579000" />
-      <workItem from="1559037233125" duration="5378000" />
+      <workItem from="1559037233125" duration="6428000" />
     </task>
     <servers />
   </component>
@@ -437,13 +433,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14006000" />
+    <option name="totallyTimeSpent" value="15056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -452,7 +448,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3281412" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3281412" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -662,9 +658,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/PasswordController.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/LoginForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="-114">
           <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
           <folding>
             <element signature="e#3592#3766#0" expanded="true" />
@@ -675,13 +674,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/PasswordController.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mds/PasswordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="130" column="64" selection-start-line="130" selection-start-column="64" selection-end-line="130" selection-end-column="64" />
+        <state relative-caret-position="275">
+          <caret line="136" column="54" selection-start-line="136" selection-start-column="54" selection-end-line="136" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3461#3656#0" expanded="true" />

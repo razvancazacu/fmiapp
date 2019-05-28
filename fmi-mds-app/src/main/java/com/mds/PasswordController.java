@@ -122,18 +122,24 @@ public class PasswordController {
 
         // creating a select query to see if the username already exists in the db
         if (password.equals(passwordConfirm)) {
-            String query = "UPDATE `accounts`.`users`\n" +
+//            String query = "UPDATE `accounts`.`users`\n" +
+//                    "SET\n" +
+//                    "`password` = ?\n" +
+//                    "WHERE `username` = ?;\n";
+
+            String query = "UPDATE `users`\n" +
                     "SET\n" +
                     "`password` = ?\n" +
                     "WHERE `username` = ?;\n";
-
             try {
                 preparedStatement = MyConnection.getConnection().prepareStatement(query);
                 preparedStatement.setString(1, password);
-                preparedStatement.setString(2, currentUser.getUsername());
+                preparedStatement.setString(2, "admin");
+//                preparedStatement.setString(2, currentUser.getUsername());
 
-                preparedStatement.executeQuery();
-
+                preparedStatement.executeUpdate();
+                JOptionPane.showMessageDialog(null, "Change succeeded", "Success", 2);
+                framePass.dispose();
             } catch (
                     SQLException ex) {
                 ex.printStackTrace();
@@ -141,7 +147,15 @@ public class PasswordController {
         } else {
             JOptionPane.showMessageDialog(null, "Passwords do not match", "Change Error", 2);
         }
-        JOptionPane.showMessageDialog(null, "Change succeeded", "Success", 2);
-        framePass.dispose();
+
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("PasswordController");
+        CurrentUser currentUser = new CurrentUser("admin","admin");
+        frame.setContentPane(new PasswordController( frame,  currentUser).MainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
     }
 }
