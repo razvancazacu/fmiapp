@@ -1,5 +1,6 @@
-package com.mds;
+package com.mds.GUI;
 
+import com.mds.CurrentUser;
 import com.mds.DataBaseConnection.MyConnection;
 
 import javax.swing.*;
@@ -128,11 +129,7 @@ public class LoginForm extends JFrame {
                 String acc_type = resultSet.getString("acc_type");
                 CurrentUser currentUser = new CurrentUser(acc_type, username);
                 JFrame frameMenu = new JFrame("Menu");
-                try {
-                    frameMenu.setContentPane(new MenuForm(frameMenu,currentUser).getTopPanel());
-                } catch (ClassNotFoundException ex) {
-                    ex.printStackTrace();
-                }
+                frameMenu.setContentPane(new MainFrame(frameMenu,currentUser).getRootPanel());
                 frameMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frameMenu.pack();
                 frameMenu.setVisible(true);

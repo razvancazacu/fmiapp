@@ -1,5 +1,7 @@
 package com.mds.GUI;
 
+import com.mds.CurrentUser;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -7,7 +9,7 @@ public class MainFrame extends JFrame {
     private JTabbedPane tabbedPane1;
     private JPanel rootPanel;
 
-    public MainFrame()
+    public MainFrame(JFrame mainFrame, CurrentUser currentUser)
     {
         add(rootPanel);
         setTitle("Fmi APP");
@@ -17,5 +19,9 @@ public class MainFrame extends JFrame {
         Dimension maxDimension = new Dimension(1800, 800);
         setMinimumSize(minDimension);
         setMaximumSize(maxDimension);
+    }
+
+    public JPanel getRootPanel() {
+        return rootPanel;
     }
 }

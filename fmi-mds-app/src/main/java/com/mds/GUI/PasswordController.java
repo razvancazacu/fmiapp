@@ -1,5 +1,6 @@
-package com.mds;
+package com.mds.GUI;
 
+import com.mds.CurrentUser;
 import com.mds.DataBaseConnection.MyConnection;
 
 import javax.swing.*;
