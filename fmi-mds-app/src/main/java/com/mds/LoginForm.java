@@ -18,7 +18,7 @@ public class LoginForm extends JFrame {
     private JLabel loginLabel;
     private JPasswordField passwordField;
 
-    public LoginForm() {
+    public LoginForm(JFrame frame) {
 
         //creating a border for the panel and setting the border for tha top panel
         Border panelTopBorder = BorderFactory.createMatteBorder(0, 2, 2, 2, Color.darkGray);
@@ -110,13 +110,18 @@ public class LoginForm extends JFrame {
                     resultSet = preparedStatement.executeQuery();
 
                     if (resultSet.next()) {
-                        // show a new form
-                        JFrame frame = new JFrame("LoginForm");
-                        frame.setContentPane(new com.mds.MenuForm());
-                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                        frame.pack();
-                        frame.setVisible(true);
-                        frame.setLocationRelativeTo(null);
+                        frame.dispose();
+//                        String acc_type = resultSet.getString("account_type");
+                        JFrame frameMenu = new JFrame("Menu");
+                        try {
+                            frameMenu.setContentPane(new MenuForm(frameMenu).getTopPanel());
+                        } catch (ClassNotFoundException ex) {
+                            ex.printStackTrace();
+                        }
+                        frameMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                        frameMenu.pack();
+                        frameMenu.setVisible(true);
+                        frameMenu.setLocationRelativeTo(null);
                     } else {
                         // error
                         JOptionPane.showMessageDialog(null,"Invalid Username / Password","Login Error",2);
@@ -136,7 +141,7 @@ public class LoginForm extends JFrame {
                 @Override
                 public void run() {
                     JFrame frame = new JFrame("LoginForm");
-                    frame.setContentPane(new LoginForm().topPanel);
+                    frame.setContentPane(new LoginForm(frame).topPanel);
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.pack();
                     frame.setVisible(true);
