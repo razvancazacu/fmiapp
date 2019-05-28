@@ -1,7 +1,6 @@
-package com.webscrapping;
+package com.mds.webscrapping;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -19,7 +18,7 @@ public class UMSConnectionDummy implements UMS {
     private Integer StudentYear;
     private ArrayList<Integer> yearsId = new ArrayList<Integer>();
 
-    UMSConnectionDummy() {
+    public UMSConnectionDummy() {
         /**
          * @Razvan
          * To be replaced with graphical interface 

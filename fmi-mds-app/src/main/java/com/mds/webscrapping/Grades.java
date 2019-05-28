@@ -1,4 +1,4 @@
-package com.webscrapping;
+package com.mds.webscrapping;
 
 public class Grades implements UMS{
     private String course;
