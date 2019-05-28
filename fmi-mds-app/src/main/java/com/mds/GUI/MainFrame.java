@@ -32,7 +32,7 @@ public class MainFrame extends JFrame {
 
         //test
         final Client currentClient;
-        currentClient = new Client(currentUser.getUsername(),242);
+        currentClient = new Client(currentUser.getUsername(),currentUser.getGroup());
 
         Thread reading = new Thread(){
             @Override
