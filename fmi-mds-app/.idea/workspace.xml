@@ -218,7 +218,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558556746859" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559034363051" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mysql-connector-java-8.0.16.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -229,7 +229,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="vcs.CVS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -250,13 +250,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainUMS">
-    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mds.LoginForm" />
-      <module name="fmiapp" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mds.Chat.Client" />
+      <module name="fmi-mds-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mds.*" />
+          <option name="PATTERN" value="com.mds.Chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -264,12 +264,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="webscrapping.Main" />
-      <module name="fmiapp" />
+    <configuration name="Runner" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mds.Chat.Runner" />
+      <module name="fmi-mds-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webscrapping.*" />
+          <option name="PATTERN" value="com.mds.Chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -277,12 +277,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainUMS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.webscrapping.MainUMS" />
-      <module name="fmiapp" />
+    <configuration name="ServerRunner" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mds.Chat.ServerRunner" />
+      <module name="fmi-mds-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.webscrapping.*" />
+          <option name="PATTERN" value="com.mds.Chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -292,7 +292,7 @@
     </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mds.Chat.test" />
-      <module name="fmiapp" />
+      <module name="fmi-mds-app" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mds.Chat.*" />
@@ -313,11 +313,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainUMS" />
-        <item itemvalue="Application.LoginForm" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.All in fmiapp" />
         <item itemvalue="Application.test" />
+        <item itemvalue="Application.ServerRunner" />
+        <item itemvalue="Application.Runner" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
