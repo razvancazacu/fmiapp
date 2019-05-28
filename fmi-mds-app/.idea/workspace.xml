@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4b60675-7779-4086-9f63-7727577e61ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapping/MainUMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapping/MainUMS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapping/UMSConnectionDummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapping/UMSConnectionDummy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/MainUMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/MainUMS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/UMSLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/grades.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/grades.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapping/umsConnectionDummy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webscrapping/umsConnectionDummy.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/UMSLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
+            <state relative-caret-position="126">
               <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -56,7 +48,7 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/MainUMS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -74,16 +66,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/UMSConnectionDummy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="57" column="96" lean-forward="true" selection-start-line="57" selection-start-column="96" selection-end-line="57" selection-end-column="96" />
+            <state relative-caret-position="177">
+              <caret line="76" column="54" lean-forward="true" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
               <folding>
-                <element signature="e#1100#1101#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#3796#3797#0" expanded="true" />
-                <element signature="e#3829#3830#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#4690#4691#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -252,7 +243,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559038591502" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559042736530" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/fmi-mds-app/src/main/java/com/webscrapping" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -372,7 +363,7 @@
       <workItem from="1558604784544" duration="2579000" />
       <workItem from="1558958329613" duration="13217000" />
       <workItem from="1558982328436" duration="6021000" />
-      <workItem from="1559031539899" duration="6796000" />
+      <workItem from="1559031539899" duration="9906000" />
     </task>
     <servers />
   </component>
@@ -382,7 +373,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34662000" />
+    <option name="totallyTimeSpent" value="37772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -570,21 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/UMSLogin.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/UMSLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#507#1071#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/Grades.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
@@ -624,6 +600,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/UMSLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#1071#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/UMSLogin.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.3/jsoup-1.11.3-sources.jar!/org/jsoup/Jsoup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -641,23 +632,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/UMSConnectionDummy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="76" column="54" lean-forward="true" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+          <folding>
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#4690#4691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/MainUMS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapping/UMSConnectionDummy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="57" column="96" lean-forward="true" selection-start-line="57" selection-start-column="96" selection-end-line="57" selection-end-column="96" />
-          <folding>
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#3796#3797#0" expanded="true" />
-            <element signature="e#3829#3830#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
