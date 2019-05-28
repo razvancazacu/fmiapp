@@ -32,13 +32,19 @@ public class Grades implements UMS{
         }
 
     }
-
+    public String getCourse()
+    {
+        return this.course;
+    }
+    public String getFinalGrade(){
+        return this.finalGrade;
+    }
     @Override
     public void setUsername(String user) {
         System.out.println("wrong camp");
     }
-    public int getCredits(){
-        return Integer.parseInt(this.credits);
+    public String getCredits(){
+        return this.credits;
     }
     public int totalScore(){
         if (Integer.parseInt(this.finalGrade) >=5)
@@ -51,10 +57,6 @@ public class Grades implements UMS{
 
     }
 
-    @Override
-    public String makeConnection() {
-        return "Error";
-    }
 
     @Override
     public void display(){

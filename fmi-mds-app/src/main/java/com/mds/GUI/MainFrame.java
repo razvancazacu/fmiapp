@@ -44,23 +44,14 @@ public class MainFrame extends JFrame {
         comboBox1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String option = comboBox1.getSelectedItem().toString();
                 JFrame frame = new JFrame("UMSLogin");
-                frame.setContentPane(new UMSLogin(frame).getLoginPanel());
+                frame.setContentPane(new UMSLogin(frame,sem1Table,sem2Table,option).getLoginPanel());
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
                 frame.setLocationRelativeTo(null);
-                
-
-
-                DefaultTableModel defaultTableModel = new DefaultTableModel();
-                defaultTableModel.addColumn("First Name");
-                defaultTableModel.addColumn("Last Name");
-
-                defaultTableModel.addRow(new Object[]{"alakazam", "pikapika"});
-
-                sem1Table.setModel(defaultTableModel);
+                frame.dispose();
             }
         });
     }

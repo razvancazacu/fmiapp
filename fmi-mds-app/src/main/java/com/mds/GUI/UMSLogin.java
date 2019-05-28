@@ -6,6 +6,7 @@ import com.webscrapping.UMSConnectionDummy;
 
 import javax.swing.*;
 import javax.swing.border.Border;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.lang.reflect.InvocationTargetException;
@@ -25,7 +26,7 @@ public class UMSLogin extends JFrame{
         return loginPanel;
     }
 
-    public UMSLogin(JFrame frameUMSLogin) {
+    public UMSLogin(JFrame frameUMSLogin,JTable sem1Table,JTable sem2Table,String option) {
         cnpFiled.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
@@ -50,21 +51,42 @@ public class UMSLogin extends JFrame{
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
+                Integer opti = (Integer) Integer.parseInt(String.valueOf(option.charAt(option.length()-1))) -1;
                 String user = cnpFiled.getText();
                 String pass = dobField.getText();
                 session = new UMSConnectionDummy(user, pass);
-                String code = session.makeConnection();
+                String code = session.makeConnection(opti);
                 if (code.equals("Succes")) {
-
+                    DefaultTableModel defaultTableSem1 = new DefaultTableModel();
+                    DefaultTableModel defaultTableSem2 = new DefaultTableModel();
+                    defaultTableSem1.addColumn("Materie");
+                    defaultTableSem2.addColumn("Materie");
+                    defaultTableSem1.addColumn("Nota");
+                    defaultTableSem2.addColumn("Nota");
+                    defaultTableSem1.addColumn("Credite");
+                    defaultTableSem2.addColumn("Credite");
                     ArrayList<Grades> userInformation = session.getGrades();
+                    int i = 0;
                     for(Grades temp : userInformation){
-                        temp.display();
+                        if(i<=6)
+                            defaultTableSem1.addRow(new String[]{userInformation.get(i).getCourse(),
+                                                                userInformation.get(i).getFinalGrade(),
+                                                                userInformation.get(i).getCredits()});
+                        else{
+                            defaultTableSem2.addRow(new String[]{userInformation.get(i).getCourse(),
+                                    userInformation.get(i).getFinalGrade(),
+                                    userInformation.get(i).getCredits()});
+                        }
+                            i++;
                     }
+                    sem1Table.setModel(defaultTableSem1);
+                    sem2Table.setModel(defaultTableSem2);
                 }
                 else {
 
                     System.out.print("Failed");
                 }
+
             }
 
         });
@@ -74,25 +96,11 @@ public class UMSLogin extends JFrame{
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
+
                 frameUMSLogin.dispose();
+
             }
         });
     }
-    public static void main (String[]args){
-        try {
-            SwingUtilities.invokeAndWait(new Runnable() {
-                @Override
-                public void run() {
-                    JFrame frame = new JFrame("UMSLogin");
-                    frame.setContentPane(new UMSLogin(frame).loginPanel);
-                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    frame.pack();
-                    frame.setVisible(true);
-                    frame.setLocationRelativeTo(null);
-                }
-            });
-        } catch (InterruptedException | InvocationTargetException e) {
-            e.printStackTrace();
-        }
+
     }
-}
