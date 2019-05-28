@@ -70,10 +70,9 @@ public class UMSConnectionDummy implements UMS {
                             .get();
                     Elements yearSelector = (Elements) selectedCourses.select("td").select("select").select("option");
 
-                    for (int i = 0; i < yearSelector.size()-2; i++){
+                    for (int i = 0; i < yearSelector.size()-2; i++) {
                         this.yearsId.add(Integer.parseInt(yearSelector.get(i).attr("value")));
                     }
-                    System.out.print(yearsId.toString());
                     int j;
                     while(1==1){
                         System.out.println("Select year");
