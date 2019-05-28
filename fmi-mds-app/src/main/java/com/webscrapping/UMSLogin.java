@@ -12,7 +12,6 @@ public class UMSLogin extends JFrame{
     private JPasswordField password;
     private JTextField username;
     private JButton button1;
-    private JTextArea UMSTextArea;
     private JPanel login;
     private UMSConnectionDummy session;
     public UMSLogin() {

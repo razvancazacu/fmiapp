@@ -59,44 +59,47 @@ public class UMSConnectionDummy implements UMS{
                         .timeout(8000)
                         .cookies(this.cookiesLogin)
                         .get();
-                Elements courses = selectedCourses.select("td.celula_tabel_left");
-                for (Element x : courses) {
-                    Grades course = new Grades();
-                    String text = x.text();
-                    course.addCourse(text);
-                    this.userGrades.add(course);
-                }
-                int i = 0;
-                ArrayList<String> gradeList = new ArrayList<String>();
-                Elements grades = selectedCourses.select("td.celula_tabel_center_top");
-                grades.remove(0);
-                for (Element x : grades) {
-                    String text = x.text();
-                    if (!text.contains("Sem"))
-                        gradeList.add(text);
-                    else {
+                Elements yearSelector = selectedCourses.select("#option value");
+                for(Element y : yearSelector)
+                    System.out.println(y);
+        }
 
-                        Grades gradeDetails = this.userGrades.get(i);
-                        gradeDetails.addGrade(gradeList.get(0), gradeList.get(1), gradeList.get(2), gradeList.get(3), gradeList.get(4));
-                        gradeList.clear();
-                        this.userGrades.set(i, gradeDetails);
-                        i++;
-                    }
 
-                }
+    } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "Succes";
+    }
+    public void itterateGrades (Document yearGrades){
+        Elements courses = yearGrades.select("td.celula_tabel_left");
+        for (Element x : courses) {
+            Grades course = new Grades();
+            String text = x.text();
+            course.addCourse(text);
+            this.userGrades.add(course);
+        }
+        int i = 0;
+        ArrayList<String> gradeList = new ArrayList<String>();
+        Elements grades = yearGrades.select("td.celula_tabel_center_top");
+        grades.remove(0);
+        for (Element x : grades) {
+            String text = x.text();
+            if (!text.contains("Sem"))
+                gradeList.add(text);
+            else {
+
                 Grades gradeDetails = this.userGrades.get(i);
                 gradeDetails.addGrade(gradeList.get(0), gradeList.get(1), gradeList.get(2), gradeList.get(3), gradeList.get(4));
                 gradeList.clear();
                 this.userGrades.set(i, gradeDetails);
+                i++;
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+
         }
-
-        return "Succes";
-    }
-    public void itterateGrades (Document yearGrades){
-
+        Grades gradeDetails = this.userGrades.get(i);
+        gradeDetails.addGrade(gradeList.get(0), gradeList.get(1), gradeList.get(2), gradeList.get(3), gradeList.get(4));
+        gradeList.clear();
+        this.userGrades.set(i, gradeDetails);
     }
     public ArrayList<Grades> getGrades (){
         return userGrades;
