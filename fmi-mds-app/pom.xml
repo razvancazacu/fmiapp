@@ -24,14 +24,11 @@
             <artifactId>jsoup</artifactId>
             <version>1.11.3</version>
         </dependency>
-<<<<<<< HEAD
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>1.11.3</version>
         </dependency>
-=======
->>>>>>> Changed the files locations and REFACTORED the names for classes and files that were not coresponding. The feature is working
     </dependencies>
 
     <build>
