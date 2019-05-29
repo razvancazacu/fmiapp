@@ -1,6 +1,6 @@
 package com.webscrapping;
 
-public class Grades {
+public class Grades implements UMS{
     private String course;
     private String activity;
     private String exam;
@@ -32,6 +32,31 @@ public class Grades {
         }
 
     }
+
+    @Override
+    public void setUsername(String user) {
+        System.out.println("wrong camp");
+    }
+    public int getCredits(){
+        return Integer.parseInt(this.credits);
+    }
+    public int totalScore(){
+        if (Integer.parseInt(this.finalGrade) >=5)
+            return Integer.parseInt(this.finalGrade) * Integer.parseInt(this.credits);
+        return 0;
+    }
+    @Override
+    public void setPassword(String pass) {
+        System.out.println("wrong camp");
+
+    }
+
+    @Override
+    public String makeConnection() {
+        return "Error";
+    }
+
+    @Override
     public void display(){
         System.out.println(this.course +" "+this.activity+" "+this.exam+" "+this.finalGrade +" "+this.credits+" "+this.score);
         if(this.restanta)

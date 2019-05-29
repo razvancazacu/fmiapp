@@ -1,6 +1,7 @@
 package com.webscrapping;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -10,11 +11,15 @@ import org.jsoup.Connection;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class UMSConnectionDummy {
-    private final String username ;
+public class UMSConnectionDummy implements UMS {
+    private String username;
     private String password;
     private ArrayList<Grades> userGrades = new ArrayList<Grades>();
-    UMSConnectionDummy(){
+    private Map<String, String> cookiesLogin;
+    private Integer StudentYear;
+    private ArrayList<Integer> yearsId = new ArrayList<Integer>();
+
+    UMSConnectionDummy() {
         /**
          * @Razvan
          * To be replaced with graphical interface 
@@ -26,53 +31,101 @@ public class UMSConnectionDummy {
         System.out.println("Password - Format 'dd-mm-yyyy'");
         this.password = read.next();
     }
-    UMSConnectionDummy(String username, String password){
+
+    UMSConnectionDummy(String username, String password) {
         this.username = username;
         this.password = password;
     }
-    void makeConnection(){
+
+    public void setUsername(String user) {
+        this.username = user;
+    }
+
+    public void setPassword(String pass) {
+        this.password = pass;
+    }
+
+    public String makeConnection() {
         try {
             String URL = "https://ums.unibuc.ro/ums/do/secure/inregistrare_user";
             String loginURL = "https://ums.unibuc.ro/ums/do/secure/j_security_check";
             Connection.Response response = Jsoup.connect(URL).timeout(8000)
                     .method(Connection.Method.GET)
                     .execute();
-            Map<String, String> login = response.cookies();
+            this.cookiesLogin = response.cookies();
             response = Jsoup.connect(loginURL)
                     .data("j_username", this.username)
                     .data("j_password", this.password)
                     .followRedirects(true)
                     .timeout(11000)
-                    .cookies(login)
+                    .cookies(this.cookiesLogin)
                     .method(Connection.Method.POST).execute();
+            if (response.statusCode() != 200)
+                return "Error";
+            else {
+                try {
+                    Document selectedCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
+                            .timeout(8000)
+                            .cookies(this.cookiesLogin)
+                            .get();
+                    Elements yearSelector = (Elements) selectedCourses.select("td").select("select").select("option");
 
-            Document selectedCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
-                    .timeout(8000)
-                    .cookies(login)
-                    .get();
-            Elements courses = selectedCourses.select("td.celula_tabel_left");
-            for (Element x : courses){
+                    for (int i = 0; i < yearSelector.size()-2; i++) {
+                        this.yearsId.add(Integer.parseInt(yearSelector.get(i).attr("value")));
+                    }
+                    int j;
+                    while(1==1){
+                        System.out.println("Select year");
+                        for (int i = 1 ; i <= yearsId.size();i++)
+                            System.out.println(i);
+                        Scanner input = new Scanner(System.in);
+                        j = input.nextInt()-1;
+                        if(j>=0 && j<=yearsId.size())
+                            break;
+                    }
+                    System.out.println(this.yearsId.get(j).toString());
+
+                    Document yearlyCourses = Jsoup.connect("https://ums.unibuc.ro/ums/do/secure/vizualizare_rezultate_evaluari")
+                            .timeout(8000)
+                            .cookies(this.cookiesLogin)
+                            .data("id",this.yearsId.get(j).toString())
+                            .post();
+                    this.itterateGrades(yearlyCourses);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "Succes";
+    }
+        public void itterateGrades (Document yearGrades){
+            Elements courses = yearGrades.select("td.celula_tabel_left");
+            for (Element x : courses) {
                 Grades course = new Grades();
                 String text = x.text();
                 course.addCourse(text);
                 this.userGrades.add(course);
             }
-            int i =0;
+            int i = 0;
             ArrayList<String> gradeList = new ArrayList<String>();
-            Elements grades = selectedCourses.select("td.celula_tabel_center_top");
+            Elements grades = yearGrades.select("td.celula_tabel_center_top");
             grades.remove(0);
-            for (Element x : grades){
+            for (Element x : grades) {
                 String text = x.text();
                 if (!text.contains("Sem"))
                     gradeList.add(text);
-                else{
+                else {
 
-                        Grades gradeDetails = this.userGrades.get(i);
-                        gradeDetails.addGrade(gradeList.get(0), gradeList.get(1), gradeList.get(2), gradeList.get(3), gradeList.get(4));
-                        gradeList.clear();
-                        this.userGrades.set(i, gradeDetails);
-                        i++;
-                    }
+                    Grades gradeDetails = this.userGrades.get(i);
+                    gradeDetails.addGrade(gradeList.get(0), gradeList.get(1), gradeList.get(2), gradeList.get(3), gradeList.get(4));
+                    gradeList.clear();
+                    this.userGrades.set(i, gradeDetails);
+                    i++;
+                }
 
             }
             Grades gradeDetails = this.userGrades.get(i);
@@ -80,14 +133,14 @@ public class UMSConnectionDummy {
             gradeList.clear();
             this.userGrades.set(i, gradeDetails);
         }
-        catch (IOException e){
-            e.printStackTrace();
+        public ArrayList<Grades> getGrades () {
+            return userGrades;
         }
+        @Override
+        public void display () {
+            for (Grades grades : this.userGrades) {
+                grades.display();
+            }
+        }
+    }
 
-    }
-    public void display(){
-        for(Grades grades : this.userGrades){
-            grades.display();
-        }
-    }
-}
