@@ -20,7 +20,6 @@ public class UMSConnectionDummy implements UMS {
 
     public UMSConnectionDummy() {
         /**
-         * @Razvan
          * To be replaced with graphical interface 
          * and respective messages
          */
