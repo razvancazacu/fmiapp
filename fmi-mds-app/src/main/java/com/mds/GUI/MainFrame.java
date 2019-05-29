@@ -33,8 +33,9 @@ public class MainFrame extends JFrame {
     public MainFrame(JFrame mainFrame, CurrentUser currentUser) throws IOException
     {
 
-        //test
+
         final Client currentClient;
+
         currentClient = new Client(currentUser.getUsername(),currentUser.getGroup());
 
         Thread reading = new Thread(){
@@ -158,6 +159,12 @@ public class MainFrame extends JFrame {
                 }
             }
         });
+
+
+        if (!(currentUser.getAcc_type().equalsIgnoreCase("admin")))
+        {
+            addAccountPanel.setVisible(false);
+        }
     }
 
     public JPanel getRootPanel() {
